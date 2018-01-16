@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Igor Zorin](https://up.htmlacademy.ru/adaptive/13/user/584557).
-* Наставник: `Неизвестно`.
+* Наставник: Елена Арутюнян.
 
 ---
 
