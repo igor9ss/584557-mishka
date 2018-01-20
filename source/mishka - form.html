@@ -1,62 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>mishka-form</title>
   </head>
   <body>
-
     <header class="main-header">
-
-             <a href="#" class="mail-header__logo">
-               <img src="http://placehold.it/86x35" alt="Магазин 'Мишка'" width="86" height="35" class="main-header__logo-img">
-             </a>
-
-             <nav class="main-navigation">
-               <button type="button" class="main-navigation__toggle">Открыть меню</button>
-               <ul class="main-navigation__list site-list">
-                 <li class="site-list__item">
-                   <a href="miska-katalog">Каталог товаров</a>
-                 </li>
-                 <li class="site-list__item">
-                   <a href="mishka-form">Вязание на заказ</a>
-                 </li>
-                 <li class="search site-list__item">
-                   <a href="#">Поиск по сайту</a>
-                 </li>
-                 <li class="cart site-list__item">
-                   <a href="#">Корзина: пока пуста</a>
-                 </li>
-               </ul>
-
-             </nav>
-          </header>
-
+      <a href="#" class="mail-header__logo">
+        <img src="http://placehold.it/86x35" alt="Магазин 'Мишка'" width="86" height="35" class="main-header__logo-img">
+      </a>
+      <nav class="main-navigation">
+        <button type="button" class="main-navigation__toggle">Открыть меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="miska-katalog">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="mishka-form">Вязание на заказ</a>
+          </li>
+          <li class="search site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="cart site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main-content">
-
-      <heder class="main-content_header page-header">
-
-        <h2 class="page-header__title">Вязание на заказ</h2>
-
+      <heder class="main-content__header header">
+        <h2 class="header__title">Вязание на заказ</h2>
       </heder>
-
+      <form action="https://echo.htmlacademy.ru" method="post" class="form">
+        <p class="form-descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <fieldset class="form__radio-btn radio-btn">
+          <legend class="radio-btn__val">Тип</legend>
+          <input type="radio" name="character" value="inter-acc" class="radio-btn__item" id="radio-btn1">
+          <label for="radio-btn1" class="radio-btn__transcript">Аксессуар для интерьера</label>
+          <br>
+          <input type="radio" name="character" value="child-toy" class="radio-btn__item" id="radio-btn2">
+          <label for="radio-btn2" class="radio-btn__transcript">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="form__checkboxes checkboxes">
+          <legend class="checkboxes_color-val">Цвет</legend>
+          <input type="checkbox" name="white" class="checkboxes__item" id="white">
+          <label for="white" class="checkboxes__transcript">Белый</label>
+          <br>
+          <input type="checkbox" name="gray" class="checkboxes__item" id="gray">
+          <label for="gray" class="checkboxes__transcript">Серый</label>
+          <br>
+          <input type="checkbox" name="tiffany" class="checkboxes__item" id="tiffany">
+          <label for="tiffany" class="checkboxes__transcript">«Тиффани»</label>
+          <br>
+          <input type="checkbox" name="black" class="checkboxes__item" id="black">
+          <label for="black" class="checkboxes__transcript">Черный</label>
+          <br>
+          <input type="checkbox" name="pink" class="checkboxes__item" id="pink">
+          <label for="pink" class="checkboxes__transcript">Розовый</label>
+          <br>
+          <input type="checkbox" name="orange" class="checkboxes__item" id="orange">
+          <label for="orange" class="checkboxes__transcript">Оранжевый</label>
+        </fieldset>
+        <fieldset class="form__user-name user-name">
+          <legend class="user-name_val">ФИО</legend>
+          <label for="nameOfUser" class="user-name__transcript">Имя</label>
+          <input type="text" name="userName" id="nameOfUser" class="user-name__item" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          <br>
+          <label for="famName" class="user-name__transcript">Фамилия</label>
+          <input type="text" name="surname" id="famName" class="user-name__item" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          <br>
+          <label for="middleName" class="user-name__transcript">Отчество</label>
+          <input type="text" name="patronymic" id="middleName" class="user-name__item" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+        </fieldset>
+        <fieldset class="form__user-phone user-phone">
+          <legend class="user-phone__val">Тел</legend>
+          <input type="tel" name="user-phone" id="phone" class="user-phone__item" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+        </fieldset>
+        <fieldset class="form__user-mail user-mail">
+          <legend class="user-mail__val">e-mail</legend>
+          <input type="e-mail" name="user-mail" class="user-mail__item" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+        </fieldset>
+        <fieldset class="form__optional optional">
+          <legend class="optional__val">Доп</legend>
+          <textarea name="optional" class="optional__item" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
+        </fieldset>
+        <small class="form__note">*Поля обязательны для заполнения</small>
+        <br>
+        <button type="submit" class="form__submiter btn">Отправить заказ</button>
+      </form>
     </main>
-
     <footer class="main-footer">
-
-              <ul class="main-footer__social social">
-                <li class="social__item"><a href="#">Мы в Инстаграме</a></li>
-                <li class="social__item"><a href="#">Мы в Фейсбуке</a></li>
-                <li class="social__item"><a href="#">Мы в Твиттере</a></li>
-              </ul>
-              <div class="main-footer__copyright copyright">
-                <b class="copyright__text">Разработано</b>
-                <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-                  <img src="http://placehold.it/27x34" alt="HTML academy" width="27" height="34" class="copyright__img">
-                </a>
-              </div>
-
+      <ul class="main-footer__social social">
+        <li class="social__item"><a href="#">Мы в Инстаграме</a></li>
+        <li class="social__item"><a href="#">Мы в Фейсбуке</a></li>
+        <li class="social__item"><a href="#">Мы в Твиттере</a></li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <img src="http://placehold.it/27x34" alt="HTML academy" width="27" height="34" class="copyright__img">
+        </a>
+      </div>
     </footer>
-
   </body>
 </html>
