@@ -30,13 +30,12 @@
     <main class="main-content">
       <h2 class="main-content__title" title>Вязание на заказ</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <fieldset class="form__radio-btn radio-btn">
           <legend class="radio-btn__val">Тип</legend>
           <input class="radio-btn__item" type="radio" name="character" value="inter-acc" id="radio-btn1">
           <label class="radio-btn__transcript" for="radio-btn1">Аксессуар для интерьера</label>
-          <br>
           <input class="radio-btn__item" type="radio" name="character" value="child-toy" id="radio-btn2">
           <label class="radio-btn__transcript" for="radio-btn2">Детская игрушка</label>
         </fieldset>
@@ -44,19 +43,14 @@
           <legend class="checkboxes_color-val">Цвет</legend>
           <input class="checkboxes__item" type="checkbox" name="white" id="white">
           <label class="checkboxes__transcript" for="white">Белый</label>
-          <br>
           <input class="checkboxes__item" type="checkbox" name="gray" id="gray">
           <label class="checkboxes__transcript" for="gray">Серый</label>
-          <br>
           <input class="checkboxes__item" type="checkbox" name="tiffany" id="tiffany">
           <label class="checkboxes__transcript" for="tiffany">«Тиффани»</label>
-          <br>
           <input class="checkboxes__item" type="checkbox" name="black" id="black">
           <label class="checkboxes__transcript" for="black">Черный</label>
-          <br>
           <input class="checkboxes__item" type="checkbox" name="pink" id="pink">
           <label class="checkboxes__transcript" for="pink">Розовый</label>
-          <br>
           <input class="checkboxes__item" type="checkbox" name="orange" id="orange">
           <label class="checkboxes__transcript" for="orange">Оранжевый</label>
         </fieldset>
@@ -64,10 +58,8 @@
           <legend class="user-name_val">ФИО</legend>
           <label class="user-name__transcript" for="nameOfUser">Имя</label>
           <input class="user-name__item" type="text" name="userName" id="nameOfUser" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-          <br>
           <label class="user-name__transcript" for="famName">Фамилия</label>
           <input class="user-name__item" type="text" name="surname" id="famName" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-          <br>
           <label class="user-name__transcript" for="middleName">Отчество</label>
           <input class="user-name__item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
         </fieldset>
@@ -84,7 +76,6 @@
           <textarea class="optional__item" name="optional" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
         </fieldset>
         <small class="form__note">*Поля обязательны для заполнения</small>
-        <br>
         <button class="form__submiter btn" type="submit">Отправить заказ</button>
       </form>
     </main>
