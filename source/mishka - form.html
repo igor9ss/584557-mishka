@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>mishka-form</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-img" src="http://placehold.it/86x35" alt="Магазин 'Мишка'" width="86" height="35">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="miska-katalog">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="mishka-form">Вязание на заказ</a>
+          </li>
+          <li class="search site-list__item">
+            <a class="site-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="cart site-list__item">
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h2 class="main-content__title" title>Вязание на заказ</h2>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <fieldset class="form__radio-btn radio-btn">
+          <legend class="radio-btn__val">Тип</legend>
+          <input class="radio-btn__item" type="radio" name="character" value="inter-acc" id="radio-btn1">
+          <label class="radio-btn__transcript" for="radio-btn1">Аксессуар для интерьера</label>
+          <input class="radio-btn__item" type="radio" name="character" value="child-toy" id="radio-btn2">
+          <label class="radio-btn__transcript" for="radio-btn2">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="form__checkboxes checkboxes">
+          <legend class="checkboxes_color-val">Цвет</legend>
+          <input class="checkboxes__item" type="checkbox" name="white" id="white">
+          <label class="checkboxes__transcript" for="white">Белый</label>
+          <input class="checkboxes__item" type="checkbox" name="gray" id="gray">
+          <label class="checkboxes__transcript" for="gray">Серый</label>
+          <input class="checkboxes__item" type="checkbox" name="tiffany" id="tiffany">
+          <label class="checkboxes__transcript" for="tiffany">«Тиффани»</label>
+          <input class="checkboxes__item" type="checkbox" name="black" id="black">
+          <label class="checkboxes__transcript" for="black">Черный</label>
+          <input class="checkboxes__item" type="checkbox" name="pink" id="pink">
+          <label class="checkboxes__transcript" for="pink">Розовый</label>
+          <input class="checkboxes__item" type="checkbox" name="orange" id="orange">
+          <label class="checkboxes__transcript" for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="form__user-name user-name">
+          <legend class="user-name_val">ФИО</legend>
+          <label class="user-name__transcript" for="nameOfUser">Имя</label>
+          <input class="user-name__item" type="text" name="userName" id="nameOfUser" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          <label class="user-name__transcript" for="famName">Фамилия</label>
+          <input class="user-name__item" type="text" name="surname" id="famName" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          <label class="user-name__transcript" for="middleName">Отчество</label>
+          <input class="user-name__item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+        </fieldset>
+        <fieldset class="form__user-phone user-phone">
+          <legend class="user-phone__val">Тел</legend>
+          <input class="user-phone__item" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+        </fieldset>
+        <fieldset class="form__user-mail user-mail">
+          <legend class="user-mail__val">e-mail</legend>
+          <input class="user-mail__item" type="email" name="user-mail" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+        </fieldset>
+        <fieldset class="form__optional optional">
+          <legend class="optional__val">Доп</legend>
+          <textarea class="optional__item" name="optional" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
+        </fieldset>
+        <small class="form__note">*Поля обязательны для заполнения</small>
+        <button class="form__submiter btn" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <ul class="main-footer__social social">
+        <li class="social__item"><a href="#">Мы в Инстаграме</a></li>
+        <li class="social__item"><a href="#">Мы в Фейсбуке</a></li>
+        <li class="social__item"><a href="#">Мы в Твиттере</a></li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" alt="HTML academy" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
