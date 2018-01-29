@@ -3,10 +3,11 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
-  background: #ffffff;
+  background: green;
   outline: 3px solid red;
+}
 
-  &__title {
+.main-content__title {
     min-height: 175px;
     margin: 0;
     padding: 0 30px;
@@ -15,5 +16,11 @@
     font-weight: bold;
     background-color: #f1f1f1;
     outline: 3px solid orange;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    width: 768px;
+    padding: 0 50px;
   }
 }

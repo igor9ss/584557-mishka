@@ -2,25 +2,52 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-  text-align: center;
   list-style: none;
   background: #ffffff;
+}
 
-  &__item {
-    min-height: 80px;
+.site-list__item {
+  min-height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__link {
+  display: block;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    min-height: 90px;
+    border-bottom: none;
+  }
+
+  .site-list__search {
+    order: 1;
+    width: 84px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
   }
 
-  &__link {
-    display: block;
-    color: black;
+  .site-list__cart{
+    order: 2;
+    width: 265px;
+    flex-grow: 1;
+    border-bottom: 1px solid #ececec;
+  }
 
-    &:hover {
-      color: #666666;
-    }
-
-    &:active {
-      color: #b2b2b2;
-    }
+  .site-list__catalog {
+    width: 167px;
+    order: 3;
+  }
+  .site-list__booking {
+    order: 4;
+    width: 167px;
   }
 }
