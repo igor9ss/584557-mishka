@@ -31,3 +31,44 @@
   border-right: none;
   border-top: 1px solid #63d1bb;
 }
+
+@media (min-width: 768px) {
+  .form__fieldset {
+    outline: 3px solid blue;
+    padding: 50px 0;
+    border: none;
+  }
+
+  .form__colors {
+    height: 200px;
+  }
+
+  .form__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 87px;
+    padding-left: 80px;
+  }
+
+  .form__label-checkbx {
+    width: 150px;
+    min-height: 50px;
+    outline: 3px solid green;
+  }
+
+  .form__radio-btn-item,
+  .form__checkboxes-item {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .form__wrap {
+    margin-left: 95px;
+  }
+
+  .form__descr {
+    margin-left: 95px;
+  }
+}

@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 30px;
   background: #ffffff;
-  outline: 3px solid red;
+  outline: 3px solid blue;
 }
 
 .main-header__logo {
@@ -39,17 +39,30 @@
 
 @media (min-width: 768px) {
   .main-header {
-    display: flex;
     width: 768px;
     padding: 0 50px;
   }
 
+  .main-header__menu-toggle {
+    display: none;
+  }
+
   .main-header__logo {
-    display: inline-block;
+    width: 320px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-header {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .main-header__logo {
+    order: 2;
     width: 320px;
     height: 90px;
     border: none;
-    border-bottom: 1px solid #ececec;
-    border-left: 1px solid #ececec;
   }
 }

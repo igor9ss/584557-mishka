@@ -2,28 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mishka-form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
-      <button class="main-header__menu-toggle" type="button">Открыть меню</button>
-      </a>
       <nav class="main-navigation">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+          <button class="main-header__menu-toggle" type="button">Открыть меню</button>
+        </a>
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__catalog">
             <a class="site-list__link" href="mishka%20-%20catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__booking">
             <a class="site-list__link" href="mishka%20-%20form.html">Вязание на заказ</a>
           </li>
-          <li class="search site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
+          <li class="site-list__item site-list__new site-list__hidden-item">
+            <a class="site-list__link" href="#">Новые поступления</a>
           </li>
-          <li class="cart site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          <li class="site-list__item site-list__sale site-list__hidden-item">
+            <a class="site-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-list">
+          <li class="user-list__item user-list__search">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__cart">
+            <a class="user-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -35,52 +44,65 @@
         </p>
         <fieldset class="form__fieldset">
           <legend class="form__val">Тип</legend>
-          <input class="form__radio-btn-item" type="radio" name="character" value="inter-acc" id="radio-btn1">
-          <label class="form__label" for="radio-btn1">Аксессуар для интерьера</label>
-          <input class="form__radio-btn-item" type="radio" name="character" value="child-toy" id="radio-btn2">
-          <label class="form__label" for="radio-btn2">Детская игрушка</label>
+          <div class="form__wrap">
+            <input class="form__radio-btn-item" type="radio" name="character" value="inter-acc" id="radio-btn1">
+            <label class="form__label" for="radio-btn1">Аксессуар для интерьера</label>
+            <input class="form__radio-btn-item" type="radio" name="character" value="child-toy" id="radio-btn2">
+            <label class="form__label" for="radio-btn2">Детская игрушка</label>
+          </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__colors form__fieldset">
           <legend class="form__val">Цвет</legend>
-          <input class="form__checkboxes-item" type="checkbox" name="white" id="white">
-          <label class="form__label" for="white">Белый</label>
-          <input class="form__checkboxes-item" type="checkbox" name="gray" id="gray">
-          <label class="form__label" for="gray">Серый</label>
-          <input class="form__checkboxes-item" type="checkbox" name="tiffany" id="tiffany">
-          <label class="form__label" for="tiffany">«Тиффани»</label>
-          <input class="form__checkboxes-item" type="checkbox" name="black" id="black">
-          <label class="form__label" for="black">Черный</label>
-          <input class="form__checkboxes-item" type="checkbox" name="pink" id="pink">
-          <label class="form__label" for="pink">Розовый</label>
-          <input class="form__checkboxes-item" type="checkbox" name="orange" id="orange">
-          <label class="form__label" for="orange">Оранжевый</label>
+          <div class="form__wrap">
+            <input class="form__checkboxes-item" type="checkbox" name="white" id="white">
+            <label class="form__label form__label-checkbx" for="white">Белый</label>
+            <input class="form__checkboxes-item" type="checkbox" name="gray" id="gray">
+            <label class="form__label form__label-checkbx" for="gray">Серый</label>
+            <input class="form__checkboxes-item" type="checkbox" name="tiffany" id="tiffany">
+            <label class="form__label form__label-checkbx" for="tiffany">«Тиффани»</label>
+            <input class="form__checkboxes-item" type="checkbox" name="black" id="black">
+            <label class="form__label form__label-checkbx" for="black">Черный</label>
+            <input class="form__checkboxes-item" type="checkbox" name="pink" id="pink">
+            <label class="form__label form__label-checkbx" for="pink">Розовый</label>
+            <input class="form__checkboxes-item" type="checkbox" name="orange" id="orange">
+            <label class="form__label form__label-checkbx" for="orange">Оранжевый</label>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__val">ФИО</legend>
-          <label class="form__label" for="nameOfUser">Имя</label>
-          <input class="form__user-name-item" type="text" name="userName" id="nameOfUser" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-          <label class="form__label" for="famName">Фамилия</label>
-          <input class="form__user-name-item" type="text" name="surname" id="famName" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-          <label class="form__label" for="middleName">Отчество</label>
-          <input class="form__user-name-item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          <div class="form__wrap">
+            <label class="form__label" for="nameOfUser">Имя</label>
+            <input class="form__user-name-item" type="text" name="userName" id="nameOfUser" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            <label class="form__label" for="famName">Фамилия</label>
+            <input class="form__user-name-item" type="text" name="surname" id="famName" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            <label class="form__label" for="middleName">Отчество</label>
+            <input class="form__user-name-item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__val">Тел</legend>
-          <input class="form__user-phone-item" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <div class="form__wrap">
+            <input class="form__user-phone-item" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__val">e-mail</legend>
-          <input class="form__user-mail-item" type="email" name="user-mail" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+          <div class="form__wrap">
+            <input class="form__user-mail-item" type="email" name="user-mail" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__val">Доп</legend>
-          <textarea class="form__optional-item" name="optional" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
+          <div class="form__wrap">
+            <textarea class="form__optional-item" name="optional" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
+          </div>
         </fieldset>
         <small class="form__note">*Поля обязательны для заполнения</small>
         <button class="form__submiter btn" type="submit">Отправить заказ</button>
       </form>
     </main>
     <footer class="main-footer">
+      <img class="main-footer-logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
       <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__instagram" href="#">Мы в Инстаграме</a>

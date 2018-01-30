@@ -1,0 +1,48 @@
+.user-list {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  list-style: none;
+  background: #ffffff;
+}
+
+.user-list__link {
+  display: block;
+  color: #000000;
+}
+
+.user-list__item {
+  min-height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .user-list{
+    display: flex;
+  }
+
+  .user-list__item {
+    min-height: 90px;
+    border: none;
+  }
+
+  .user-list__search{
+    width: 85px;
+    border: 1px solid #ececec;
+    border-top: none;
+  }
+  .user-list__cart{
+    width: 260px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+@media (min-width: 1250px) {
+  .user-list{
+    order: 2;
+    height: 90px;
+  }
+  .user-list__cart {
+    width: 270px;
+  }
+}

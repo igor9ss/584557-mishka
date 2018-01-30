@@ -3,73 +3,97 @@
   <head>
     <meta charset="utf-8">
     <title>mishka-catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
-      <button class="main-header__menu-toggle" type="button">Открыть меню</button>
-      </a>
       <nav class="main-navigation">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+          <button class="main-header__menu-toggle" type="button">Открыть меню</button>
+        </a>
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__catalog">
             <a class="site-list__link" href="mishka%20-%20catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__booking">
             <a class="site-list__link" href="mishka%20-%20form.html">Вязание на заказ</a>
           </li>
-          <li class="search site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
+          <li class="site-list__item site-list__new site-list__hidden-item">
+            <a class="site-list__link" href="#">Новые поступления</a>
           </li>
-          <li class="cart site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          <li class="site-list__item site-list__sale site-list__hidden-item">
+            <a class="site-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-list">
+          <li class="user-list__item user-list__search">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__cart">
+            <a class="user-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-content">
       <h2 class="main-content__title">Каталог товаров</h2>
-      <article class="main-content__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="product__name">Зайчик-попрыгайчик</h3>
-        </a>
-        <p class="product__descr">Рост 30 см, вес 200 г</p>
-        <b class="product__price">1 200 руб.</b>
-        <button class="product__cart-add" type="button">Добавить в корзину</button>
-      </article>
-      <article class="main-content__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="http://placehold.it/260x195" alt="Корзинка для белья">
-          <h3 class="product__name">Корзинка для белья</h3>
-        </a>
-        <p class="product__descr">Диаметр 15 см, высота 10 см</p>
-        <b class="product__price">690 руб.</b>
-        <button class="product__cart-add" type="button">Добавить в корзину</button>
-      </article>
-      <article class="main-content__item product">
-        <a class="product__link" href="#">
-          <img class="product__img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
-          <h3 class="product__name">Большая корзинка для игрушек</h3>
-        </a>
-        <p class="product__descr">Диаметр 30 см, высота 30 см</p>
-        <b class="product__price">1 500 руб.</b>
-        <button class="product__cart-add" type="button">Добавить в корзину</button>
-      </article>
-      <article class="main-content__item product">
-        <h3 class="product__name">Процесс производства</h3>
-        <video class="product__video" width="260" height="150" poster="http://placehold.it/260x150" controls>
-          <source src="#.mp4" type="video/mp4">
-          <source src="#.ogv" type="video/ogg">
-          <source src="#.webm" type="video/webm">
-        </video>
-        <p class="product__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="btn product__btn" href="mishka%20-%20form.html">Сделать заказ</a>
-      </article>
+      <div class="products">
+        <article class="products__item product">
+          <a class="product__link-img" href="#">
+            <img class="product__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
+          </a>
+          <div class="product__wrap">
+            <a class="product__link" href="#">
+              <h3 class="product__name">Зайчик-попрыгайчик</h3>
+            </a>
+            <small class="product__descr">Рост 30 см, вес 200 г</small>
+            <b class="product__price">1 200 руб.</b>
+            <button class="product__cart-add" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+        <article class="products__item product">
+          <a class="product__link-img" href="#">
+            <img class="product__img" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+          </a>
+          <div class="product__wrap">
+            <a class="product__link" href="#">
+              <h3 class="product__name">Корзинка для белья</h3>
+            </a>
+            <small class="product__descr">Диаметр 15 см, высота 10 см</small>
+            <b class="product__price">690 руб.</b>
+            <button class="product__cart-add" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+        <article class="products__item product">
+          <a class="product__link-img" href="#">
+            <img class="product__img" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+          </a>
+          <div class="product__wrap">
+            <a class="product__link" href="">
+              <h3 class="product__name">Большая корзинка для игрушек</h3>
+            </a>
+            <small class="product__descr">Диаметр 30 см, высота 30 см</small>
+            <b class="product__price">1 500 руб.</b>
+            <button class="product__cart-add" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+        <article class="products__item product__video">
+          <h3 class="product__name">Процесс производства</h3>
+          <video class="product__video-box" width="260" height="150" poster="http://placehold.it/260x150" controls>
+            <source src="#.mp4" type="video/mp4">
+            <source src="#.ogv" type="video/ogg">
+            <source src="#.webm" type="video/webm">
+          </video>
+          <small class="product__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </small>
+          <a class="btn product__btn" href="mishka%20-%20form.html">Сделать заказ</a>
+        </article>
+      </div>
     </main>
     <footer class="main-footer">
+      <img class="main-footer-logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
       <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__instagram" href="#">Мы в Инстаграме</a>

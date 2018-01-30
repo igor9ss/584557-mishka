@@ -7,9 +7,28 @@
   outline: 3px solid red;
 }
 
+.main-footer-logo {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 768px;
+    min-height: 143px;
+    padding: 0 50px;
+  }
+
+  .main-footer-logo {
+    display: block;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-footer {
+    width: 1150px;
     padding: 0 50px;
   }
 }
