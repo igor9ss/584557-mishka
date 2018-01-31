@@ -1,9 +1,9 @@
 .site-list {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  list-style: none;
   background: #ffffff;
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .site-list__item {
@@ -22,14 +22,15 @@
 
 @media (min-width: 768px) {
   .site-list {
-    order: 2;
     display: flex;
+
+    order: 2;
   }
 
   .site-list__item {
     min-height: 90px;
-    background-color: #f1f1f1;
     border-bottom: none;
+    background-color: #f1f1f1;
   }
 
   .site-list__booking {
@@ -46,8 +47,9 @@
   }
 
   .site-list {
-    order: 1;
     width: 360px;
+
+    order: 1;
     flex-wrap: wrap;
   }
 

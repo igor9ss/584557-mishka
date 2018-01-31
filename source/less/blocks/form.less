@@ -1,42 +1,42 @@
 .form {
-  background: #ffffff;
   outline: 3px solid green;
+  background: #ffffff;
 }
 
 .form__descr {
   margin: 0;
+  color: #444444;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
 }
 
 .form__label {
+  font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  font-weight: bold;
 }
 
 .form__val {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
   color: #63d1bb;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
 }
 
 .form__fieldset {
   margin: 0;
   padding: 0;
+  border-top: 1px solid #63d1bb;
+  border-right: none;
   border-bottom: none;
   border-left: none;
-  border-right: none;
-  border-top: 1px solid #63d1bb;
 }
 
 @media (min-width: 768px) {
   .form__fieldset {
-    outline: 3px solid blue;
     padding: 50px 0;
+    outline: 3px solid blue;
     border: none;
   }
 
@@ -47,14 +47,15 @@
   .form__wrap {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin-left: 87px;
     padding-left: 80px;
+
+    flex-wrap: wrap;
   }
 
   .form__label-checkbx {
-    width: 150px;
     min-height: 50px;
+    width: 150px;
     outline: 3px solid green;
   }
 

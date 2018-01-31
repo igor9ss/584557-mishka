@@ -1,9 +1,9 @@
 .user-list {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  list-style: none;
   background: #ffffff;
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .user-list__link {
@@ -17,34 +17,31 @@
 }
 
 @media (min-width: 768px) {
-  .user-list {
+  .user-list
+  .user-list__item
+  .user-list__search
+  .user-list__cart {
     display: flex;
-  }
-
-  .user-list__item {
+  }{
     min-height: 90px;
     border: none;
-  }
-
-  .user-list__search {
+  }{
     width: 85px;
     border: 1px solid #ececec;
     border-top: none;
-  }
-
-  .user-list__cart {
+  }{
     width: 260px;
     border-bottom: 1px solid #ececec;
   }
 }
 
 @media (min-width: 1250px) {
-  .user-list {
-    order: 2;
-    height: 90px;
-  }
-
+  .user-list
   .user-list__cart {
+    height: 90px;
+
+    order: 2;
+  }{
     width: 270px;
   }
 }

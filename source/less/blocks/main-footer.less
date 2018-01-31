@@ -1,10 +1,10 @@
 .main-footer {
   box-sizing: border-box;
-  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
-  background: #f1f1f1;
+  width: 320px;
   outline: 3px solid red;
+  background: #f1f1f1;
 }
 
 .main-footer-logo {
@@ -14,11 +14,12 @@
 @media (min-width: 768px) {
   .main-footer {
     display: flex;
+    padding: 0 50px;
+    min-height: 143px;
+    width: 768px;
+
     justify-content: space-between;
     align-items: center;
-    width: 768px;
-    min-height: 143px;
-    padding: 0 50px;
   }
 
   .main-footer-logo {
@@ -28,7 +29,7 @@
 
 @media (min-width: 1250px) {
   .main-footer {
-    width: 1150px;
     padding: 0 50px;
+    width: 1150px;
   }
 }
