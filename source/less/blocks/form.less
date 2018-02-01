@@ -1,34 +1,76 @@
 .form {
-  text-align: left;
   outline: 3px solid green;
+  background: #ffffff;
+}
 
-  &__descr {
-    margin: 0;
-    font-size: 13px;
-    line-height: 24px;
-    color: #444444;
+.form__descr {
+  margin: 0;
+  color: #444444;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__val {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #63d1bb;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+@media (min-width: 768px) {
+  .form__fieldset {
+    padding: 50px 0;
+    outline: 3px solid blue;
+    border: none;
   }
 
-  &__label {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
+  .form__colors {
+    height: 200px;
   }
 
-  &__val {
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: bold;
-    color: #63d1bb;
-    text-transform: uppercase;
+  .form__wrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 87px;
+    padding-left: 80px;
+
+    flex-wrap: wrap;
   }
 
-  &__fieldset {
-    margin: 0;
-    padding: 0;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid #63d1bb;
+  .form__label-checkbx {
+    min-height: 50px;
+    width: 150px;
+    outline: 3px solid green;
+  }
+
+  .form__radio-btn-item,
+  .form__checkboxes-item {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .form__wrap {
+    margin-left: 95px;
+  }
+
+  .form__descr {
+    margin-left: 95px;
   }
 }

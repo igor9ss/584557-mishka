@@ -1,19 +1,39 @@
 .main-content {
   box-sizing: border-box;
-  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
-  background: #ffffff;
+  width: 320px;
   outline: 3px solid red;
+  background: #ffffff;
+}
 
-  &__title {
-    min-height: 175px;
-    margin: 0;
-    padding: 0 30px;
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: bold;
-    background-color: #f1f1f1;
-    outline: 3px solid orange;
+.main-content__title {
+  margin: 0;
+  padding: 0 30px;
+  min-height: 175px;
+  outline: 3px solid orange;
+  background-color: #f1f1f1;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 0 50px;
+    width: 768px;
+  }
+
+  .main-content__title {
+    margin-top: -90px;
+    padding-top: 110px;
+    min-height: 115px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-content {
+    padding: 0 50px;
+    width: 1150px;
   }
 }

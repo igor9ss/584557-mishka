@@ -1,38 +1,69 @@
 .main-header {
-  width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 30px;
+  width: 320px;
+  outline: 3px solid blue;
   background: #ffffff;
-  outline: 3px solid red;
+}
 
-  &__logo {
-    display: block;
-    position: relative;
-    width: 100%;
-    min-height: 80px;
-    border-top: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
+.main-header__logo {
+  position: relative;
+  display: block;
+  min-height: 80px;
+  width: 100%;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-header__logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -17px;
+  margin-left: -43px;
+}
+
+.main-header__menu-toggle {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background: url("../../img/icon-menu-close.svg");
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0 50px;
+    width: 768px;
   }
 
-  &__logo-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -43px;
-    margin-top: -17px;
+  .main-header__menu-toggle {
+    display: none;
   }
 
-  &__menu-toggle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 40px;
-    right: 30px;
-    margin-top: -10px;
-    font-size: 0;
-    background: url("../../img/icon-menu-close.svg");
+  .main-header__logo {
+    width: 320px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-header {
+    padding: 0 50px;
+    width: 1150px;
+  }
+
+  .main-header__logo {
+    width: 320px;
+    height: 90px;
     border: none;
-    outline: none;
+
+    order: 2;
   }
 }

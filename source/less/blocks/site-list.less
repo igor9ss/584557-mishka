@@ -1,26 +1,75 @@
 .site-list {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  text-align: center;
-  list-style: none;
   background: #ffffff;
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
 
-  &__item {
-    min-height: 80px;
-    border-bottom: 1px solid #ececec;
+.site-list__item {
+  min-height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__hidden-item {
+  display: none;
+}
+
+.site-list__link {
+  display: block;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+
+    order: 2;
   }
 
-  &__link {
-    display: block;
-    color: black;
+  .site-list__item {
+    min-height: 90px;
+    border-bottom: none;
+    background-color: #f1f1f1;
+  }
 
-    &:hover {
-      color: #666666;
-    }
+  .site-list__booking {
+    width: 167px;
+  }
 
-    &:active {
-      color: #b2b2b2;
-    }
+  .site-list__catalog {
+    width: 167px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .site-list__hidden-item {
+    display: list-item;
+  }
+
+  .site-list {
+    width: 360px;
+
+    order: 1;
+    flex-wrap: wrap;
+  }
+
+  .site-list__catalog {
+    width: 184px;
+    border-right: 1px solid #ececec;
+    background-color: #ffffff;
+  }
+
+  .site-list__booking {
+    width: 175px;
+    background-color: #ffffff;
+  }
+
+  .site-list__new {
+    width: 185px;
+  }
+
+  .site-list__sale {
+    width: 175px;
   }
 }

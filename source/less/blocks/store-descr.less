@@ -3,24 +3,6 @@
   text-align: left;
   outline: 3px solid blue;
 
-  &__title {
-    margin: 0;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-    color: black;
-  }
-
-  &__list {
-    margin: 0;
-    padding: 0;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-    color: black;
-    list-style: none;
-  }
-
   &__item_bg_flower {
     background: url("../../img/icon-feature-flower.svg") no-repeat top left;
   }
@@ -43,5 +25,41 @@
 
   &__item_bg_gift {
     background: url("../../img/icon-feature-gift.svg") no-repeat top left;
+  }
+}
+
+.store-descr__title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  color: black;
+}
+
+.store-descr__list {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: black;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .store-descr__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .store-descr__item {
+    width: 334px;
+    min-height: 157px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .store-descr {
+    padding-left: 175px;
   }
 }

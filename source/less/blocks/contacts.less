@@ -1,32 +1,52 @@
 .contacts {
   outline: 3px solid green;
+  background: #ffffff;
+}
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__table {
+  color: #444444;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__address {
+  vertical-align: top;
+}
+
+.contacts__email-link {
+  color: #444444;
+}
+
+.contacts__map {
+  background-color: #e6e2dc;
+  background-image: url("../../img/map-mobile@1x.jpg") no-repeat center;
+}
+
+@media (min-width: 1250px) {
+  .contacts {
+    position: relative;
+    padding-left: 175px;
+    min-height: 635px;
   }
 
-  &__table {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 30px;
-    color: #444444;
+  .contacts__wrap {
+    width: 350px;
   }
 
-  &__address {
-    vertical-align: top;
-  }
-
-  &__email-link {
-    color: #444444;
-  }
-
-  &__map {
-    margin-left: -30px;
-    background-color: #e6e2dc;
-    background-image: url("../../img/map-mobile@1x.jpg") no-repeat center;
+  .contacts__map {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 525px;
+    height: 457px;
   }
 }
