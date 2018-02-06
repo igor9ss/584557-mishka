@@ -103,7 +103,7 @@
   left: 2px;
   width: 36px;
   height: 36px;
-  background: url(../../img/icon-tick.svg) 3px 5px no-repeat;
+  background: url("../../img/icon-tick.svg") 3px 5px no-repeat;
   content: "";
 }
 
@@ -190,7 +190,7 @@
   .form__wrap {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0px 167px;
+    margin: 0 0 0 167px;
 
     flex-wrap: wrap;
   }
@@ -208,7 +208,6 @@
   }
 
   .form__colors {
-    padding: 0;
     padding: 65px 50px 10px;
     margin: 0 -50px;
     background: #f1f1f1;
@@ -243,12 +242,13 @@
     left: 16px;
     top: 3px;
   }
+
   .form__checkboxes-item:checked + .form__label-checkbx::after {
     top: -15px;
     left: -1px;
     width: 55px;
     height: 55px;
-    background: url(../../img/icon-tick.svg) center no-repeat;
+    background: url("../../img/icon-tick.svg") center no-repeat;
   }
 
   .form__radio-btn-item,
@@ -333,7 +333,7 @@
     font-size: 19px;
   }
 
-  .form__posit-wrap{
+  .form__posit-wrap {
     position: relative;
   }
 
@@ -343,10 +343,6 @@
     line-height: 30px;
     right: 0;
     top: 13px;
-  }
-
-  .form__submiter {
-
   }
 }
 
