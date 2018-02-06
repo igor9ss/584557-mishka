@@ -1,14 +1,14 @@
 .week-goods {
-  outline: 3px solid green;
   background: #ffffff;
   color: #444444;
   font-size: 15px;
   line-height: 24px;
+  padding-bottom: 35px;
 }
 
 .week-goods__title {
   margin: 0;
-  padding: 0;
+  padding: 25px 0 5px;
   color: black;
   font-weight: bold;
   font-size: 25px;
@@ -17,7 +17,7 @@
 
 .week-goods__description {
   margin: 0;
-  padding: 0;
+  padding: 25px 0 5px;
 }
 
 .week-goods__descr-title {
@@ -27,8 +27,25 @@
   line-height: 20px;
 }
 
+.week-goods__table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.week-goods__feature {
+  padding-right: 10px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.week-goods__table-row {
+  display: block;
+  box-shadow: 0 1px 0 0 #ececec;
+}
+
 .week-goods__icon {
   display: block;
+  margin-bottom: 25px;
 }
 
 .week-goods__price {
@@ -36,6 +53,10 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -46,28 +67,47 @@
 
   .week-goods__title {
     display: inline-block;
+    padding-top: 10px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 20px;
   }
 
   .week-goods__descr-title {
+    position: absolute;
+    top: 15px;
+    right: 0px;
     display: inline-block;
     width: 120px;
+    text-align: center;
   }
 
   .week-goods__description {
-    width: 334px;
+    width: 290px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .week-goods__table {
-    width: 334px;
+    width: 290px;
+    margin-bottom: 50px;
+    line-height: 20px;
   }
 
   .week-goods__icon {
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 1px;
     width: 333px;
     height: 404px;
   }
+}
+
+.week-goods__price {
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 33px;
 }
 
 @media (min-width: 1250px) {

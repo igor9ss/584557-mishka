@@ -29,10 +29,10 @@
         </ul>
         <ul class="main-navigation__list user-list">
           <li class="user-list__item user-list__search">
-            <a class="user-list__link" href="#">Поиск по сайту</a>
+            <a class="user-list__link user-list__link_search" href="#">Поиск по сайту</a>
           </li>
           <li class="user-list__item user-list__cart">
-            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <a class="user-list__link user-list__link_cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -42,13 +42,13 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__radio-field">
           <legend class="form__val">Тип</legend>
           <div class="form__wrap">
             <input class="form__radio-btn-item" type="radio" name="character" value="inter-acc" id="radio-btn1">
-            <label class="form__label" for="radio-btn1">Аксессуар для интерьера</label>
+            <label class="form__label form__label-radbtn" for="radio-btn1">Аксессуар для интерьера</label>
             <input class="form__radio-btn-item" type="radio" name="character" value="child-toy" id="radio-btn2">
-            <label class="form__label" for="radio-btn2">Детская игрушка</label>
+            <label class="form__label form__label-radbtn" for="radio-btn2">Детская игрушка</label>
           </div>
         </fieldset>
         <fieldset class="form__colors form__fieldset">
@@ -68,58 +68,60 @@
             <label class="form__label form__label-checkbx" for="orange">Оранжевый</label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__user-data">
           <legend class="form__val">ФИО</legend>
-          <div class="form__wrap">
-            <label class="form__label" for="nameOfUser">Имя</label>
+          <div class="form__wrap form__wrap_10mb form__wrap-flxder">
+            <label class="form__label form__label-txtarea" for="nameOfUser">Имя:</label>
             <input class="form__user-name-item" type="text" name="userName" id="nameOfUser" placeholder="Введите ваше имя*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-            <label class="form__label" for="famName">Фамилия</label>
+            <label class="form__label form__label-txtarea" for="famName">Фамилия:</label>
             <input class="form__user-name-item" type="text" name="surname" id="famName" placeholder="Укажите фимилию*" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
-            <label class="form__label" for="middleName">Отчество</label>
+            <label class="form__label form__label-txtarea" for="middleName">Отчество:</label>
             <input class="form__user-name-item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__tel">
           <legend class="form__val">Тел</legend>
-          <div class="form__wrap">
+          <div class="form__wrap form__wrap_10mb">
             <input class="form__user-phone-item" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__mail">
           <legend class="form__val">e-mail</legend>
-          <div class="form__wrap">
+          <div class="form__wrap form__wrap_10mb">
             <input class="form__user-mail-item" type="email" name="user-mail" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__val">Доп</legend>
-          <div class="form__wrap">
-            <textarea class="form__optional-item" name="optional" placeholder="Опишите все ваши пожелания сразу" rows="6"></textarea>
+          <legend class="form__val form__val_top_20">Доп</legend>
+          <div class="form__wrap form__wrap_5mb">
+            <textarea class="form__optional-item" name="optional" placeholder="Опишите все ваши пожелания к сразу" rows="7"></textarea>
           </div>
         </fieldset>
-        <small class="form__note">*Поля обязательны для заполнения</small>
-        <button class="form__submiter btn" type="submit">Отправить заказ</button>
+        <div class="form__posit-wrap">
+          <small class="form__note">*Поля обязательны для заполнения</small>
+          <button class="form__submiter btn" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </main>
     <footer class="main-footer">
-      <img class="main-footer-logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__instagram" href="#">Мы в Инстаграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__twitter" href="#">Мы в Твиттере</a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__img" src="http://placehold.it/27x34" alt="HTML academy" width="27" height="34">
-        </a>
-      </div>
-    </footer>
+          <img class="main-footer-logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
+          <ul class="main-footer__social social">
+            <li class="social__item social__instagram">
+              <a class="social__link" href="#">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item social__facebook">
+              <a class="social__link" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item social__twitter">
+              <a class="social__link" href="#">Мы в Твиттере</a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__img" src="img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
+            </a>
+          </div>
+        </footer>
   </body>
 </html>

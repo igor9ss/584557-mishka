@@ -1,0 +1,114 @@
+.product-video {
+  padding: 20px 0 30px;
+  border: 1px solid #ececec;
+}
+
+.product-video__name {
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 90px;
+  padding-right: 40px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 33px;
+    background: url("../../img/icon-video.svg") top left no-repeat;
+  }
+}
+
+.product-video__box {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background: url("../../img/icon-play.svg") 50% 50% no-repeat,
+    url("../../img/video-mobile@1x.jpg") 50% 50% no-repeat;
+}
+
+.product-video__descr {
+  display: block;
+  margin: 0;
+  padding: 0 0 25px 35px;
+  color: #444444;
+  text-align: left;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.product-video__btn {
+  min-height: 50px;
+  width: 190px;
+  font-size: 17px;
+  line-height: 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .product-video {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .product-video__box {
+    order: -1;
+    min-height: 455px;
+    background: url("../../img/icon-play.svg") 50% 50% no-repeat,
+    url("../../img/video-mobile@1x.jpg") 50% 50%;
+  }
+
+  .product-video__name {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding-left: 105px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        top: -5px;
+        left: 43px;
+        background: url("../../img/icon-video.svg") top left no-repeat;
+      }
+  }
+
+  .product-video__descr {
+    padding: 0;
+    padding-left: 40px;
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .product-video__btn {
+    width: 585px;
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1250px) {
+  .product-video {
+    width: 1050px;
+  }
+
+  .product-video__box {
+    width: 683px;
+    height: 455px;
+    outline: 3px solid;
+  }
+}

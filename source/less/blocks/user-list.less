@@ -1,4 +1,5 @@
 .user-list {
+  position: relative;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -6,14 +7,65 @@
   background: #ffffff;
 }
 
-.user-list__link {
-  display: block;
-  color: #000000;
+.user-list::after {
+  content: "Бесплатная доставка по России";
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 111px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: normal;
 }
 
 .user-list__item {
-  min-height: 80px;
+  min-height: 79px;
   border-bottom: 1px solid #ececec;
+}
+
+.user-list__link {
+  display: block;
+  height: 53px;
+  color: #000000;
+  padding-left: 75px;
+  padding-top: 27px;
+}
+
+.user-list__link_search {
+  position: relative;
+}
+
+.user-list__link_search::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  top: 30px;
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.2;
+}
+
+.user-list__link_cart {
+  position: relative;
+}
+
+.user-list__link_cart::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  top: 30px;
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {
@@ -21,21 +73,42 @@
     display: flex;
   }
 
+  .user-list::after {
+    display: block;
+}
+
   .user-list__item {
-    min-height: 90px;
+    height: 89px;
     border: none;
   }
 
+  .user-list__link {
+    padding: 0;
+    height: 89px;
+
+    &_cart {
+      padding-top: 30px;
+      padding-left: 83px;
+      height: 59px;
+    }
+  }
+
   .user-list__search {
-    width: 85px;
+    width: 83px;
+    padding: 0;
     border: 1px solid #ececec;
     border-top: none;
+    font-size: 0;
   }
 
   .user-list__cart {
-    width: 260px;
+    height: 89px;
+    margin-right: -50px;
+    padding: 0;
+    width: 313px;
     border-bottom: 1px solid #ececec;
   }
+
 }
 
 @media (min-width: 1250px) {

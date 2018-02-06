@@ -1,10 +1,11 @@
 .store-descr {
   background: #ffffff;
   text-align: left;
-  outline: 3px solid blue;
+  padding-top: 35px;
+  padding-bottom: 25px;
 
   &__item_bg_flower {
-    background: url("../../img/icon-feature-flower.svg") no-repeat top left;
+    background: url("../../img/icon-feature-flower.svg") no-repeat 5px 0;
   }
 
   &__item_bg_money {
@@ -12,19 +13,19 @@
   }
 
   &__item_bg_heart {
-    background: url("../../img/icon-feature-heart.svg") no-repeat top left;
+    background: url("../../img/icon-feature-heart.svg") no-repeat 5px 0;
   }
 
   &__item_bg_ball {
-    background: url("../../img/icon-feature-ball.svg") no-repeat top left;
+    background: url("../../img/icon-feature-ball.svg") no-repeat 3px 0;
   }
 
   &__item_bg_rocket {
-    background: url("../../img/icon-feature-rocket.svg") no-repeat top left;
+    background: url("../../img/icon-feature-rocket.svg") no-repeat -5px 0;
   }
 
   &__item_bg_gift {
-    background: url("../../img/icon-feature-gift.svg") no-repeat top left;
+    background: url("../../img/icon-feature-gift.svg") no-repeat no-repeat 3px 0;
   }
 }
 
@@ -34,6 +35,7 @@
   font-weight: bold;
   line-height: 30px;
   color: black;
+  margin-bottom: 40px;
 }
 
 .store-descr__list {
@@ -46,15 +48,55 @@
   list-style: none;
 }
 
+.store-descr__item {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
 @media (min-width: 768px) {
+  .store-descr__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 55px;
+  }
+
   .store-descr__list {
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .store-descr__item {
     width: 334px;
-    min-height: 157px;
+    min-height: 107px;
+    padding-bottom: 0;
+  }
+
+  .store-descr__item_bg_flower {
+    order: 1;
+  }
+
+  .store-descr__item_bg_money {
+    order: 3;
+  }
+
+  .store-descr__item_bg_heart {
+    order: 5;
+    min-height: 99px;
+  }
+
+  .store-descr__item_bg_ball {
+    order: 2;
+  }
+
+  .store-descr__item_bg_rocket {
+    order: 4;
+  }
+
+  .store-descr__item_bg_gift {
+    order: 6;
+    min-height: 99px;
   }
 }
 

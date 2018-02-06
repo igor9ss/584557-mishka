@@ -1,6 +1,12 @@
 .product {
-  outline: 3px solid green;
   background: #ffffff;
+  position: relative;
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+
+.product__wrap {
+  padding: 0 30px;
 }
 
 .product__name {
@@ -11,50 +17,96 @@
   line-height: 24px;
 }
 
+.product__link-img {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.product__link {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
 .product__descr {
+  display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 0 25px;
   color: #444444;
   text-align: left;
   font-size: 13px;
   line-height: 24px;
+  border-bottom: 1px solid #ececec;
 }
 
-.product__link {
-  color: #000000;
+.product__price {
+  display: inline-block;
+  padding: 23px 0;
 }
 
-.product__video {
-  outline: 3px solid green;
-}
-
-.product__btn {
-  min-height: 50px;
-  width: 190px;
-  font-size: 17px;
-  line-height: 16px;
+.product__cart-add {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background: #ffffff;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  background: url("../../img/icon-cart.svg") top right no-repeat;
 }
 
 @media (min-width: 768px) {
   .product {
     display: flex;
     line-height: 0;
+    margin-bottom: 50px;
+  }
+
+  .product__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 334px;
+    height: 334px;
+  }
+
+  .product__link-img {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 334px;
+    height: 334px;
   }
 
   .product__img {
     width: 334px;
     height: 334px;
-    outline: 2px solid;
   }
 
-  .product__wrap {
-    width: 334px;
-    outline: 2px solid;
+  .product__name {
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 20px;
   }
 
-  .product__video-box {
-    min-height: 455px;
-    width: 668px;
+  .product__descr {
+    margin: 0 30px 10px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 30px;
+    border: none;
+  }
+
+  .product__price {
+    display: inline-block;
+    padding: 33px 0 33px;
+    margin: auto 30px 0;
+    border-top: 1px solid #ececec;
+  }
+
+  .product__cart-add {
+    bottom: 22px;
+    right: 32px;
   }
 }
 
@@ -73,15 +125,5 @@
   .product__wrap {
     width: 316px;
     outline: 2px solid;
-  }
-
-  .product__video {
-    width: 1050px;
-  }
-
-  .product__video-box {
-    width: 683px;
-    height: 455px;
-    outline: 3px solid;
   }
 }
