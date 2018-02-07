@@ -1,12 +1,13 @@
 .product-section__header {
   margin: 0 -30px;
+  border-top: 1px solid transparent;
+  background: #fafafa url("../../img/hero-mobile@1x.jpg") center -18px;
 }
 
 .product-section__title {
   margin: 0;
-  padding-top: 70px;
-  min-height: 210px;
-  background: #fafafa url("../../img/hero-mobile@1x.jpg") center -20px;
+  margin-top: 70px;
+  padding: 0 30px;
   font-weight: bold;
   font-size: 27px;
   text-align: center;
@@ -15,6 +16,7 @@
 
 .product-section__list {
   margin: 0;
+  margin-top: 121px;
   padding: 0;
   list-style: none;
 }
@@ -32,8 +34,8 @@
 .product-section__link {
   padding-left: 30px;
   display: block;
-  min-height: 73px;
-  padding-top: 30px;
+  min-height: 78px;
+  padding-top: 25px;
   color: white;
   font-weight: bold;
   font-size: 19px;
@@ -42,22 +44,33 @@
 
 @media (min-width: 768px) {
   .product-section__header {
-    margin: 0 -50px;
+    position: relative;
+    margin: -90px -50px 0;
+    min-height: 745px;
+    background: #f1f1f1 url("../../img/hero-mobile@1x.jpg") center;
   }
 
   .product-section__title {
-    margin-top: -90px;
+    margin-top: 150px;
     min-height: 470px;
-    padding: 152px 70px 0;
+    padding: 0 105px;
     font-size: 43px;
     line-height: 50px;
-    background: #f1f1f1 url("../../img/hero-mobile@1x.jpg") center center no-repeat;
+  }
+
+  .product-section__header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 768px;
+    height: 24px;
+    background: url("../../img/zigzag-fill-desktop.png");
   }
 
   .product-section__list {
     width: 668px;
     margin: 0 auto;
-    margin-top: -104px;
     display: flex;
     font-size: 20px;
     line-height: 30px;
@@ -67,6 +80,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 35px;
+    min-height: 88px;
   }
 
   .product-section__item1 {
