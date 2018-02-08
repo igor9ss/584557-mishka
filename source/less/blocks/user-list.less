@@ -7,18 +7,6 @@
   background: #ffffff;
 }
 
-.user-list::after {
-  content: "Бесплатная доставка по России";
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 111px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
-  font-weight: normal;
-}
-
 .user-list__item {
   min-height: 79px;
   border-bottom: 1px solid #ececec;
@@ -73,13 +61,24 @@
     display: flex;
   }
 
-  .user-list::after {
-    display: block;
-  }
-
   .user-list__item {
     height: 89px;
     border: none;
+
+    &_search {
+      width: 85px;
+      padding: 0;
+      border: 1px solid #ececec;
+      border-top: none;
+      font-size: 0;
+    }
+
+    &_cart {
+      margin-right: -50px;
+      padding: 0;
+      width: 313px;
+      border-bottom: 1px solid #ececec;
+    }
   }
 
   .user-list__link {
@@ -92,31 +91,18 @@
       height: 59px;
     }
   }
-
-  .user-list__search {
-    width: 83px;
-    padding: 0;
-    border: 1px solid #ececec;
-    border-top: none;
-    font-size: 0;
-  }
-
-  .user-list__cart {
-    height: 89px;
-    margin-right: -50px;
-    padding: 0;
-    width: 313px;
-    border-bottom: 1px solid #ececec;
-  }
 }
 
 @media (min-width: 1250px) {
   .user-list {
     order: 2;
+  }
+
+  .user-list__item {
     height: 90px;
   }
 
-  .user-list__cart {
-    width: 270px;
+  .user-list__item_cart {
+    flex-grow: 1;
   }
 }

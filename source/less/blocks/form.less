@@ -169,6 +169,60 @@
     position: relative;
     padding-bottom: 50px;
     border: none;
+
+    &_radio-field {
+      padding: 0;
+      margin: 70px -50px 10px;
+      padding-left: 50px;
+    }
+
+    &_colors {
+      padding: 65px 0 10px 50px;
+      margin: 0 -50px;
+      background: #f1f1f1;
+    }
+
+    &_user-data {
+      padding-top: 65px;
+      padding-bottom: 0;
+      margin-bottom: 15px;
+    }
+
+    &_tel {
+      margin-left: -50px;
+      margin-right: -50px;
+      padding: 65px 50px 5px;
+      background: #f1f1f1;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 27px;
+          height: 27px;
+          right: 75px;
+          top: 60px;
+          background: url("../../img/icon-phone.svg") center no-repeat;
+        }
+    }
+
+    &_mail {
+      margin: 0 -50px;
+      padding: 0 50px 30px;
+      background: #f1f1f1;
+      margin-bottom: 45px;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 34px;
+          height: 27px;
+          right: 75px;
+          bottom: 60px;
+          background: url("../../img/icon-mail.svg") center no-repeat;
+        }
+    }
   }
 
   .form__descr {
@@ -197,24 +251,12 @@
     flex-wrap: wrap;
   }
 
-  .form__radio-field {
-    padding: 0;
-    margin: 70px -50px 10px;
-    padding-left: 50px;
-  }
-
   .form__label-radbtn {
     width: 51%;
     padding-left: 80px;
     margin-bottom: 58px;
     line-height: 18px;
     font-size: 19px;
-  }
-
-  .form__colors {
-    padding: 65px 0 10px 50px;
-    margin: 0 -50px;
-    background: #f1f1f1;
   }
 
   .form__label-checkbx {
@@ -263,12 +305,6 @@
     display: none;
   }
 
-  .form__user-data {
-    padding-top: 65px;
-    padding-bottom: 0;
-    margin-bottom: 15px;
-  }
-
   .form__label-txtarea {
     margin-right: 25px;
     margin-bottom: 55px;
@@ -290,49 +326,13 @@
     padding-left: 20px;
   }
 
-  .form__tel {
-    margin-left: -50px;
-    margin-right: -50px;
-    padding: 65px 50px 5px;
-    background: #f1f1f1;
-  }
-
   .form__user-phone-item {
     margin-bottom: 35px;
     background: #f1f1f1;
   }
 
-  .form__tel::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    right: 75px;
-    top: 60px;
-    background: url("../../img/icon-phone.svg") center no-repeat;
-  }
-
-  .form__mail {
-    margin: 0 -50px;
-    padding: 0 50px 30px;
-    background: #f1f1f1;
-    margin-bottom: 45px;
-  }
-
   .form__user-mail-item {
     background: #f1f1f1;
-  }
-
-  .form__mail::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 34px;
-    height: 27px;
-    right: 75px;
-    bottom: 60px;
-    background: url("../../img/icon-mail.svg") center no-repeat;
   }
 
   .form__optional-item::placeholder {

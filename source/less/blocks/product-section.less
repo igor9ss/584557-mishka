@@ -21,14 +21,16 @@
   list-style: none;
 }
 
-.product-section__item1 {
+.product-section__item {
   min-height: 103px;
-  background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
-}
 
-.product-section__item2 {
-  min-height: 103px;
-  background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px center;
+  &_interior {
+    background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
+  }
+
+  &_toy {
+    background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px center;
+  }
 }
 
 .product-section__link {
@@ -47,7 +49,7 @@
     position: relative;
     margin: -90px -50px 0;
     min-height: 745px;
-    background: #f1f1f1 url("../../img/hero-mobile@1x.jpg") center;
+    background: #ececec url("../../img/hero-mobile@1x.jpg") center no-repeat;
   }
 
   .product-section__title {
@@ -72,8 +74,6 @@
     width: 668px;
     margin: 0 auto;
     display: flex;
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .product-section__link {
@@ -83,13 +83,59 @@
     min-height: 88px;
   }
 
-  .product-section__item1 {
+  .product-section__item {
     width: 50%;
-    background: #63d1bb url("../../img/icon-interior.svg") no-repeat 257px center;
+
+      &_interior {
+      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
+    }
+
+    &_toy {
+      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px center;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-section__title {
+    margin-top: 155px;
+    padding: 0 200px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
-  .product-section__item2 {
+  .product-section__header {
+    margin: -90px -100px 0;
+  }
+
+  .product-section__list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .product-section__item {
     width: 50%;
-    background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 239px center;
+    min-height: 120px;
+
+      &_interior {
+      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
+    }
+
+    &_toy {
+      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px center;
+    }
+  }
+
+  .product-section__link {
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+
+  .product-section__header::after {
+    bottom: -20px;
+    width: 1250px;
+    height: 34px;
+    background: url("../../img/zigzag-fill-desktop3.png");
+
   }
 }

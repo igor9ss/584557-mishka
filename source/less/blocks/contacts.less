@@ -96,20 +96,50 @@
 
 @media (min-width: 1250px) {
   .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     position: relative;
     padding-left: 175px;
-    min-height: 635px;
+    padding-bottom: 102px;
   }
 
   .contacts__wrap {
-    width: 350px;
+    width: 310px;
+    margin-right: 35px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 70px;
+    margin-bottom: 45px;
+  }
+
+  .contacts__title::after {
+    left: -113px;
+    top: -10px;
+  }
+
+  .contacts__table {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+
+  .contacts__table-row {
+    margin-bottom: 25px;
   }
 
   .contacts__map {
-    position: absolute;
-    top: 70px;
-    right: 0;
     width: 525px;
-    height: 457px;
+    height: 460px;
+    margin: 0;
+  }
+
+  .contacts__btn {
+    margin: 0;
+    margin-top: -54px;
+    font-size: 17px;
   }
 }

@@ -18,10 +18,10 @@
 .week-goods__title {
   margin: 0;
   padding: 25px 0 5px;
-  color: black;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  color: #000000;
 }
 
 .week-goods__description {
@@ -136,20 +136,55 @@
 
 @media (min-width: 1250px) {
   .week-goods {
-    padding-left: 175px;
+    padding-left: 170px;
     min-height: 780px;
+  }
+
+  .week-goods__title {
+    position: relative;
+    display: block;
+    padding-top: 125px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 2;
+  }
+
+  .week-goods__descr-title {
+    top: 143px;
+    left: 23px;
   }
 
   .week-goods__icon {
     position: absolute;
-    top: 70px;
+    top: 73px;
     right: 0;
     width: 525px;
     height: 636px;
   }
 
-  .week-goods__descr-title {
-    position: absolute;
-    left: 55px;
+  .week-goods__description {
+    margin-bottom: 35px;
+  }
+
+  .week-goods__price {
+    font-size: 20px;
+  }
+
+  .week-goods__table {
+    margin-bottom: 110px;
+  }
+
+  .week-goods__order {
+    width: 290px;
+  }
+
+  .week-goods::after {
+    content: "";
+    display: block;
+    width: 1050px;
+    height: 23px;
+    background: url("../../img/zigzag-line-desktop3.png") center bottom;
+    margin-left: -170px;
+    margin-top: 73px;
   }
 }

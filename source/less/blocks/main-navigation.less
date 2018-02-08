@@ -1,6 +1,6 @@
 .main-navigation {
+  position: relative;
   width: 100%;
-  background: #ffffff;
 }
 
 .main-navigation__list {
@@ -8,10 +8,26 @@
   padding: 0;
 }
 
+.main-navigation__deliv {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 107px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: normal;
+  z-index: 1000;
+}
+
 @media (min-width: 768px) {
   .main-navigation {
     display: flex;
 
     flex-wrap: wrap;
+  }
+
+  .main-navigation__deliv {
+    display: block;
   }
 }

@@ -8,15 +8,14 @@
   z-index: 99;
 }
 
-.site-list__hidden-item {
-  display: none;
-}
-
 .site-list__item {
   min-height: 79px;
   border-bottom: 1px solid #ececec;
-}
 
+    &_hidden {
+      display: none;
+  }
+}
 
 .site-list__link {
   display: block;
@@ -35,54 +34,67 @@
   }
 
   .site-list__item {
-    height: 90px;
+    min-height: 90px;
     border-bottom: none;
+
+      &_catalog,
+      &_booking {
+        width: 167px;
+      }
   }
 
   .site-list__link {
     display: inline-block;
     padding: 0;
-    padding-top: 15px;
+    margin-top: 15px;
     background-color: transparent;
-  }
-
-  .site-list__booking {
-    width: 167px;
-  }
-
-  .site-list__catalog {
-    width: 167px;
   }
 }
 
 @media (min-width: 1250px) {
-  .site-list__hidden-item {
-    display: list-item;
-  }
-
   .site-list {
-    width: 360px;
+    margin-left: -50px;
+    width: 450px;
+    font-size: 17px;
 
     order: 1;
     flex-wrap: wrap;
   }
 
-  .site-list__catalog {
-    width: 184px;
-    border-right: 1px solid #ececec;
-    background-color: #ffffff;
+  .site-list__item {
+    &_catalog {
+      width: 184px;
+      padding-left: 50px;
+      border-right: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    &_booking{
+      padding-left: 35px;
+      flex-grow: 1;
+      border-bottom: 1px solid #ececec;
+    }
+
+    &_new {
+      padding-left: 50px;
+      width: 185px;
+    }
+
+    &_sale {
+      padding-left: 35px;
+    }
+
+    &_hidden {
+      display: list-item;
+    }
   }
 
-  .site-list__booking {
-    width: 175px;
-    background-color: #ffffff;
-  }
+  .site-list__link {
+    margin-top: 35px;
 
-  .site-list__new {
-    width: 185px;
-  }
-
-  .site-list__sale {
-    width: 175px;
+    &_mt_25 {
+      margin-top: 25px;
+    }
   }
 }

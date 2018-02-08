@@ -14,27 +14,28 @@
           <button class="main-header__menu-toggle" type="button">Открыть меню</button>
         </a>
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__catalog">
+          <li class="site-list__item site-list__item_catalog">
             <a class="site-list__link" href="mishka%20-%20catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__booking">
+          <li class="site-list__item site-list__item_booking">
             <a class="site-list__link" href="mishka%20-%20form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__new site-list__hidden-item">
-            <a class="site-list__link" href="#">Новые поступления</a>
+          <li class="site-list__item site-list__item_new site-list__item_hidden">
+            <a class="site-list__link site-list__link_mt_25" href="#">Новые поступления</a>
           </li>
-          <li class="site-list__item site-list__sale site-list__hidden-item">
-            <a class="site-list__link" href="#">Распродажа</a>
+          <li class="site-list__item site-list__item_sale site-list__item_hidden">
+            <a class="site-list__link site-list__link_mt_25" href="#">Распродажа</a>
           </li>
         </ul>
         <ul class="main-navigation__list user-list">
-          <li class="user-list__item user-list__search">
+          <li class="user-list__item user-list__item_search">
             <a class="user-list__link user-list__link_search" href="#">Поиск по сайту</a>
           </li>
-          <li class="user-list__item user-list__cart">
+          <li class="user-list__item user-list__item">
             <a class="user-list__link user-list__link_cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <span class="main-navigation__deliv">Бесплатная доставка по России</span>
       </nav>
     </header>
     <main class="main-content">
@@ -42,7 +43,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <fieldset class="form__fieldset form__radio-field">
+        <fieldset class="form__fieldset form__fieldset_radio-field">
           <legend class="form__val">Тип</legend>
           <div class="form__wrap">
             <input class="form__radio-btn-item" type="radio" name="character" value="inter-acc" id="radio-btn1">
@@ -51,7 +52,7 @@
             <label class="form__label form__label-radbtn" for="radio-btn2">Детская игрушка</label>
           </div>
         </fieldset>
-        <fieldset class="form__colors form__fieldset">
+        <fieldset class="form__fieldset form__fieldset_colors ">
           <legend class="form__val">Цвет</legend>
           <div class="form__wrap">
             <input class="form__checkboxes-item" type="checkbox" name="white" id="white">
@@ -68,7 +69,7 @@
             <label class="form__label form__label-checkbx" for="orange">Оранжевый</label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__user-data">
+        <fieldset class="form__fieldset form__fieldset_user-data">
           <legend class="form__val">ФИО</legend>
           <div class="form__wrap form__wrap_10mb form__wrap-flxder">
             <label class="form__label form__label-txtarea" for="nameOfUser">Имя:</label>
@@ -79,13 +80,13 @@
             <input class="form__user-name-item" type="text" name="patronymic" id="middleName" placeholder="Отчество, если желаете" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__tel">
+        <fieldset class="form__fieldset form__fieldset_tel">
           <legend class="form__val">Тел</legend>
           <div class="form__wrap form__wrap_10mb">
             <input class="form__user-phone-item" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XX XX*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__mail">
+        <fieldset class="form__fieldset form__fieldset_mail">
           <legend class="form__val">e-mail</legend>
           <div class="form__wrap form__wrap_10mb">
             <input class="form__user-mail-item" type="email" name="user-mail" placeholder="Ваш Email*" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
@@ -104,15 +105,17 @@
       </form>
     </main>
     <footer class="main-footer">
-          <img class="main-footer-logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
+          <a class="main-footer__logo-link" href="#">
+            <img class="main-footer__logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
+          </a>
           <ul class="main-footer__social social">
-            <li class="social__item social__instagram">
+            <li class="social__item social_instagram">
               <a class="social__link" href="#">Мы в Инстаграме</a>
             </li>
-            <li class="social__item social__facebook">
+            <li class="social__item social_facebook">
               <a class="social__link" href="#">Мы в Фейсбуке</a>
             </li>
-            <li class="social__item social__twitter">
+            <li class="social__item social_twitter">
               <a class="social__link" href="#">Мы в Твиттере</a>
             </li>
           </ul>
