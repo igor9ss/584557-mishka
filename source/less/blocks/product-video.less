@@ -1,5 +1,5 @@
 .product-video {
-  padding: 20px 0 30px;
+  padding: 23px 0 30px;
   border: 1px solid #ececec;
 }
 
@@ -22,14 +22,14 @@
     height: 35px;
     top: 10px;
     left: 33px;
-    background: url("../../img/icon-video.svg") top left no-repeat;
+    background: url("../../img/icon-video.svg") left -4px no-repeat;
   }
 }
 
 .product-video__box {
   width: 100%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   text-align: left;
   font-weight: bold;
   font-size: 17px;
@@ -41,7 +41,7 @@
 .product-video__descr {
   display: block;
   margin: 0;
-  padding: 0 0 25px 35px;
+  padding: 0 40px 25px 34px;
   color: #444444;
   text-align: left;
   font-size: 13px;
@@ -50,7 +50,7 @@
 
 .product-video__btn {
   min-height: 50px;
-  width: 190px;
+  width: 192px;
   font-size: 17px;
   line-height: 16px;
   margin: 0 auto;
@@ -73,7 +73,7 @@
   .product-video__name {
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-left: 105px;
 
     &::before {
@@ -82,8 +82,8 @@
       display: inline-block;
       width: 35px;
       height: 35px;
-      top: -5px;
-      left: 43px;
+      top: -6px;
+      left: 41px;
       background: url("../../img/icon-video.svg") top left no-repeat;
     }
   }
@@ -92,25 +92,51 @@
     padding: 0;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .product-video__btn {
     width: 585px;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: 1250px) {
   .product-video {
+    position: relative;
+    flex-direction: row;
     width: 1050px;
   }
 
   .product-video__box {
-    width: 683px;
+    width: 682px;
     height: 455px;
-    outline: 3px solid;
+    margin-right: 79px;
+    margin-bottom: 0;
+  }
+
+  .product-video__name {
+    position: absolute;
+    right: 26px;
+    top: 74px;
+
+    &::before {
+      top: -53px;
+      left: 107px;
+    }
+  }
+
+  .product-video__descr {
+    margin: 0;
+    margin-top: 175px;
+    padding: 0;
+  }
+
+  .product-video__btn {
+    width: 230px;
+    margin: 0;
+    margin-top: 47px;
   }
 }

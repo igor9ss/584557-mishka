@@ -26,7 +26,7 @@
 
 .week-goods__description {
   margin: 0;
-  padding: 25px 0 5px;
+  padding: 20px 0 13px;
 }
 
 .week-goods__descr-title {
@@ -38,13 +38,25 @@
 
 .week-goods__table {
   width: 100%;
+  margin-left: -3px;
   margin-bottom: 30px;
 }
 
 .week-goods__feature {
-  padding-right: 10px;
-  height: 36px;
+  height: 34px;
   vertical-align: middle;
+
+  &_pr_53 {
+    padding-right: 53px;
+  }
+
+  &_pr_26 {
+    padding-right: 26px;
+  }
+
+  &_pr_35 {
+    padding-right: 35px;
+  }
 }
 
 .week-goods__table-row {
@@ -54,7 +66,7 @@
 
 .week-goods__icon {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .week-goods__price {
@@ -66,6 +78,10 @@
   width: 100%;
   margin-bottom: 25px;
   text-align: center;
+}
+
+.week-goods__order {
+  padding: 14px 0;
 }
 
 @media (min-width: 768px) {
@@ -81,21 +97,22 @@
     height: 17px;
     background: url("../../img/zigzag-line-desktop2.png") center bottom;
     margin-left: -50px;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   .week-goods__title {
     display: inline-block;
-    padding-top: 33px;
+    padding-top: 42px;
+    margin-left: -3px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .week-goods__descr-title {
     position: absolute;
-    top: 45px;
-    right: 0;
+    top: 53px;
+    right: 3px;
     display: inline-block;
     width: 120px;
     text-align: center;
@@ -104,20 +121,20 @@
 
   .week-goods__description {
     width: 290px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .week-goods__table {
     width: 290px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     line-height: 20px;
   }
 
   .week-goods__icon {
     position: absolute;
-    top: 140px;
+    top: 149px;
     right: 1px;
     width: 333px;
     height: 404px;
@@ -125,19 +142,22 @@
 
   .week-goods__price {
     text-align: left;
-    margin-left: 70px;
-    margin-bottom: 33px;
+    margin-left: 71px;
+    margin-bottom: 34px;
+    font-size: 20px;
   }
 
   .week-goods__order {
     padding: 14px 0;
+    margin-left: -2px;
+    width: 292px;
   }
 }
 
 @media (min-width: 1250px) {
   .week-goods {
-    padding-left: 170px;
-    min-height: 780px;
+    margin-top: -5px;
+    padding-left: 175px;
   }
 
   .week-goods__title {
@@ -150,8 +170,8 @@
   }
 
   .week-goods__descr-title {
-    top: 143px;
-    left: 23px;
+    top: 140px;
+    left: 20px;
   }
 
   .week-goods__icon {
@@ -163,19 +183,21 @@
   }
 
   .week-goods__description {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .week-goods__price {
+    margin-left: 72px;
     font-size: 20px;
   }
 
   .week-goods__table {
+    margin-left: -5px;
     margin-bottom: 110px;
   }
 
   .week-goods__order {
-    width: 290px;
+    margin: 0;
   }
 
   .week-goods::after {
@@ -183,8 +205,8 @@
     display: block;
     width: 1050px;
     height: 23px;
-    background: url("../../img/zigzag-line-desktop3.png") center bottom;
-    margin-left: -170px;
+    background: url("../../img/zigzag-line-desktop3.png") 0 bottom;
+    margin-left: -175px;
     margin-top: 73px;
   }
 }

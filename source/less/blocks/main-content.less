@@ -3,12 +3,10 @@
   margin: 0 auto;
   padding: 0 30px;
   width: 320px;
-  background: #ffffff;
 }
 
 .main-content__title {
   margin: 0 -30px;
-  padding: 0 30px;
   min-height: 175px;
   background-color: #f1f1f1;
   font-weight: bold;
@@ -26,11 +24,24 @@
   }
 
   .main-content__title {
+    position: relative;
+    align-items: flex-start;
     margin: -90px -50px 0;
-    padding-top: 60px;
-    min-height: 115px;
+    padding-top: 93px;
+    min-height: 141px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 768px;
+      height: 24px;
+      bottom: -1px;
+      left: 0;
+      background: url("../../img/zigzag-fill-desktop-main-title.png");
+    }
   }
 }
 
@@ -38,5 +49,24 @@
   .main-content {
     padding: 0 50px;
     width: 1150px;
+  }
+
+  .main-content__title {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 38px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 1150px;
+      height: 34px;
+      background: url("../../img/zigzag-fill-desktop-maintitle.png");
+    }
   }
 }
