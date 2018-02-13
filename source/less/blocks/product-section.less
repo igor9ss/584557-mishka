@@ -24,12 +24,28 @@
 .product-section__item {
   min-height: 103px;
 
+  &:hover {
+    padding-bottom: 5px;
+  }
+
   &_interior {
-    background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
+    background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px 23px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #59d5bc;
+      background-position: 245px 18px;
+    }
   }
 
   &_toy {
-    background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px center;
+    background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px 21px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #46c1ae;
+      background-position: 235px 16px;
+    }
   }
 }
 
@@ -42,6 +58,15 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -87,12 +112,24 @@
   .product-section__item {
     width: 50%;
 
+    &:hover {
+      transform: translateY(-5px);
+    }
+
     &_interior {
       background: #63d1bb url("../../img/icon-interior.svg") no-repeat 257px 30px;
+
+      &:hover {
+        background-position: 257px 25px;
+      }
     }
 
     &_toy {
       background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 240px 31px;
+
+      &:hover {
+        background-position: 240px 26px;
+      }
     }
   }
 }
@@ -115,14 +152,26 @@
 
   .product-section__item {
     width: 50%;
-    min-height: 120px;
+    min-height: 121px;
+
+    &:hover {
+      padding-bottom: 0;
+    }
 
     &_interior {
-      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 450px center;
+      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 450px 30px;
+
+      &:hover {
+        background-position: 450px 25px;
+      }
     }
 
     &_toy {
-      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 430px center;
+      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 430px 30px;
+
+      &:hover {
+        background-position: 430px 25px;
+      }
     }
   }
 

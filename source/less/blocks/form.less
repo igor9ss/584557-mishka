@@ -140,6 +140,16 @@
   top: -10px;
 }
 
+.form__label-checkbx:hover::before,
+.form__label-radbtn:hover::before {
+  border-color: #62d1ba;
+}
+
+.form__label-checkbx:active::before,
+.form__label-radbtn:active::before {
+  border-color: #c7c7c7;
+}
+
 .form__label-radbtn::before {
   border-radius: 50%;
 }
@@ -152,8 +162,8 @@
   border-radius: 50%;
   background-color: #62d1ba;
   position: absolute;
-  left: 13px;
-  top: 3px;
+  left: 12px;
+  top: 2px;
 }
 
 .form__checkboxes-item:checked + .form__label-checkbx::after {
@@ -162,7 +172,7 @@
   left: 2px;
   width: 36px;
   height: 36px;
-  background: url("../../img/icon-tick.svg") 3px 5px no-repeat;
+  background: url("../../img/icon-tick.svg") 1px 5px no-repeat;
   content: "";
 }
 
@@ -177,6 +187,17 @@
   font-size: 17px;
   line-height: 18px;
   border-bottom: 2px solid #000000;
+  outline: none;
+  padding-left: 15px;
+  color: #444444;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
 }
 
 .form__user-name-item {
@@ -189,14 +210,22 @@
   width: 256px;
   min-height: 138px;
   margin-top: 5px;
-  padding: 0;
+  padding: 15px;
   font-size: 17px;
   line-height: 18px;
   border: 2px solid #000000;
+  outline: none;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
 }
 
 .form__optional-item::placeholder {
-  padding: 15px;
   font-size: 17px;
   line-height: 18px;
   color: #444444;
@@ -360,8 +389,8 @@
   .form__radio-btn-item:checked + .form__label-radbtn::after {
     width: 22px;
     height: 22px;
-    left: 16px;
-    top: 3px;
+    left: 15px;
+    top: -1px;
   }
 
   .form__checkboxes-item:checked + .form__label-checkbx::after {
@@ -395,6 +424,7 @@
   .form__user-name-item {
     width: 70%;
     padding-top: 0;
+    padding-left: 18px;
     margin-bottom: 39px;
     flex-grow: 1;
   }
@@ -403,15 +433,16 @@
   .form__user-phone-item::placeholder,
   .form__user-mail-item::placeholder {
     font-size: 19px;
-    padding-left: 18px;
   }
 
   .form__user-phone-item {
+    padding-left: 18px;
     margin-bottom: 35px;
     background: #f1f1f1;
   }
 
   .form__user-mail-item {
+    padding-left: 18px;
     background: #f1f1f1;
     padding-bottom: 16px;
   }
@@ -422,7 +453,6 @@
   }
 
   .form__optional-item::placeholder {
-    padding-left: 15px;
     font-size: 19px;
   }
 
@@ -511,8 +541,15 @@
     display: inline-block;
   }
 
+  .form__radio-btn-item:checked + .form__label-radbtn::after {
+    width: 22px;
+    height: 22px;
+    left: 15px;
+    top: -1px;
+  }
+
   .form__user-name-item {
-    width: 80%;
+    width: 78%;
     flex-grow: 1;
   }
 
