@@ -1,75 +1,108 @@
 .site-list {
+  position: relative;
   background: #ffffff;
   list-style: none;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  z-index: 99;
 }
 
 .site-list__item {
-  min-height: 80px;
+  min-height: 79px;
   border-bottom: 1px solid #ececec;
-}
 
-.site-list__hidden-item {
-  display: none;
+  &_hidden {
+    display: none;
+  }
 }
 
 .site-list__link {
   display: block;
+  min-height: 53px;
   color: #000000;
+  padding-left: 75px;
+  padding-top: 27px;
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 @media (min-width: 768px) {
   .site-list {
     display: flex;
-
+    font-size: 15px;
+    background-color: transparent;
     order: 2;
   }
 
   .site-list__item {
     min-height: 90px;
     border-bottom: none;
-    background-color: #f1f1f1;
+
+    &_catalog,
+    &_booking {
+      width: 167px;
+    }
   }
 
-  .site-list__booking {
-    width: 167px;
-  }
-
-  .site-list__catalog {
-    width: 167px;
+  .site-list__link {
+    display: inline-block;
+    padding: 0;
+    margin-top: 15px;
+    background-color: transparent;
   }
 }
 
 @media (min-width: 1250px) {
-  .site-list__hidden-item {
-    display: list-item;
-  }
-
   .site-list {
-    width: 360px;
+    margin-left: -50px;
+    width: 450px;
+    font-size: 17px;
 
     order: 1;
     flex-wrap: wrap;
   }
 
-  .site-list__catalog {
-    width: 184px;
-    border-right: 1px solid #ececec;
-    background-color: #ffffff;
+  .site-list__item {
+    &_catalog {
+      width: 184px;
+      padding-left: 50px;
+      border-right: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    &_booking {
+      padding-left: 35px;
+      flex-grow: 1;
+      border-bottom: 1px solid #ececec;
+    }
+
+    &_new {
+      padding-left: 50px;
+      width: 185px;
+    }
+
+    &_sale {
+      padding-left: 35px;
+    }
+
+    &_hidden {
+      display: list-item;
+    }
   }
 
-  .site-list__booking {
-    width: 175px;
-    background-color: #ffffff;
-  }
+  .site-list__link {
+    margin-top: 32px;
 
-  .site-list__new {
-    width: 185px;
-  }
-
-  .site-list__sale {
-    width: 175px;
+    &_mt_15 {
+      margin-top: 15px;
+    }
   }
 }

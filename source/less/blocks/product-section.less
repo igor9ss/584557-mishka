@@ -1,61 +1,189 @@
-.product-section {
-  outline: 3px solid violet;
+.product-section__header {
+  margin: 0 -30px;
+  border-top: 1px solid transparent;
+  background: #fafafa url("../../img/hero-mobile@1x.jpg") center -18px;
 }
 
 .product-section__title {
   margin: 0;
-  padding: 70px 30px 0;
-  min-height: 280px;
-  outline: 3px solid violet;
-  background: #fafafa url("../../img/hero-mobile@1x.jpg") no-repeat center;
+  margin-top: 70px;
+  padding: 0 30px;
   font-weight: bold;
   font-size: 27px;
-
-  ine-height: 30px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .product-section__list {
   margin: 0;
+  margin-top: 121px;
   padding: 0;
   list-style: none;
 }
 
-.product-section__item1 {
-  min-height: 100px;
-  background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px center;
-}
+.product-section__item {
+  min-height: 103px;
 
-.product-section__item2 {
-  min-height: 100px;
-  background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 230px center;
+  &:hover {
+    padding-bottom: 5px;
+  }
+
+  &_interior {
+    background: #63d1bb url("../../img/icon-interior.svg") no-repeat 245px 23px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #59d5bc;
+      background-position: 245px 18px;
+    }
+  }
+
+  &_toy {
+    background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 235px 21px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #46c1ae;
+      background-position: 235px 16px;
+    }
+  }
 }
 
 .product-section__link {
+  padding-left: 30px;
   display: block;
-  width: 100%;
-  height: 100%;
+  min-height: 78px;
+  padding-top: 25px;
   color: white;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
+  .product-section__header {
+    position: relative;
+    margin: -90px -50px 0;
+    min-height: 745px;
+    background: #ececec url("../../img/hero-mobile@1x.jpg") center no-repeat;
+  }
+
   .product-section__title {
-    margin-top: -90px;
-    min-height: 630px;
-    background-color: #f1f1f1;
+    margin-top: 150px;
+    min-height: 473px;
+    padding: 0 105px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-section__header::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    display: block;
+    width: 768px;
+    height: 24px;
+    background: url("../../img/zigzag-fill-desktop.png");
   }
 
   .product-section__list {
+    width: 668px;
+    margin: 0 auto;
     display: flex;
   }
 
-  .product-section__item1 {
-    width: 50%;
+  .product-section__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 36px;
+    padding-top: 29px;
+    min-height: 88px;
   }
 
-  .product-section__item2 {
+  .product-section__item {
     width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &_interior {
+      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 257px 30px;
+
+      &:hover {
+        background-position: 257px 25px;
+      }
+    }
+
+    &_toy {
+      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 240px 31px;
+
+      &:hover {
+        background-position: 240px 26px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-section__title {
+    padding: 0 200px 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product-section__header {
+    margin: -90px -100px 0;
+  }
+
+  .product-section__list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .product-section__item {
+    width: 50%;
+    min-height: 121px;
+
+    &:hover {
+      padding-bottom: 0;
+    }
+
+    &_interior {
+      background: #63d1bb url("../../img/icon-interior.svg") no-repeat 450px 30px;
+
+      &:hover {
+        background-position: 450px 25px;
+      }
+    }
+
+    &_toy {
+      background: #56c3b2 url("../../img/icon-toy.svg") no-repeat 430px 30px;
+
+      &:hover {
+        background-position: 430px 25px;
+      }
+    }
+  }
+
+  .product-section__link {
+    padding-left: 37px;
+    padding-top: 29px;
+  }
+
+  .product-section__header::after {
+    bottom: -14px;
+    width: 1250px;
+    height: 34px;
+    background: url("../../img/zigzag-fill-desktop3.png");
   }
 }

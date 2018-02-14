@@ -3,11 +3,11 @@
   margin: 0 auto;
   padding: 0 30px;
   width: 320px;
-  outline: 3px solid red;
   background: #f1f1f1;
+  min-height: 160px;
 }
 
-.main-footer-logo {
+.main-footer__logo {
   display: none;
 }
 
@@ -22,14 +22,21 @@
     align-items: center;
   }
 
-  .main-footer-logo {
+  .main-footer__logo {
+    width: 83px;
     display: block;
   }
 }
 
 @media (min-width: 1250px) {
   .main-footer {
-    padding: 0 50px;
+    margin: 0 auto;
+    padding: 0 100px;
     width: 1150px;
+
+    &_w_1250 {
+      width: 1250px;
+      margin-left: -50px;
+    }
   }
 }

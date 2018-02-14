@@ -1,19 +1,66 @@
 .user-list {
+  position: relative;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   list-style: none;
-  background: #ffffff;
+}
+
+.user-list__item {
+  min-height: 79px;
+  border-bottom: 1px solid #ececec;
 }
 
 .user-list__link {
   display: block;
+  height: 53px;
   color: #000000;
+  padding-left: 75px;
+  padding-top: 27px;
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
-.user-list__item {
-  min-height: 80px;
-  border-bottom: 1px solid #ececec;
+.user-list__link_search {
+  position: relative;
+}
+
+.user-list__link_search::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  top: 30px;
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.2;
+}
+
+.user-list__link_cart {
+  position: relative;
+}
+
+.user-list__link_cart::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  top: 30px;
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {
@@ -22,29 +69,47 @@
   }
 
   .user-list__item {
-    min-height: 90px;
+    height: 90px;
     border: none;
+
+    &_search {
+      width: 85px;
+      padding: 0;
+      border: 1px solid #ececec;
+      border-top: none;
+      font-size: 0;
+    }
+
+    &_cart {
+      margin-right: -50px;
+      padding: 0;
+      width: 313px;
+      border-bottom: 1px solid #ececec;
+    }
   }
 
-  .user-list__search {
-    width: 85px;
-    border: 1px solid #ececec;
-    border-top: none;
-  }
+  .user-list__link {
+    padding: 0;
+    height: 89px;
 
-  .user-list__cart {
-    width: 260px;
-    border-bottom: 1px solid #ececec;
+    &_cart {
+      padding-top: 30px;
+      padding-left: 83px;
+      height: 59px;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .user-list {
     order: 2;
+  }
+
+  .user-list__item {
     height: 90px;
   }
 
-  .user-list__cart {
-    width: 270px;
+  .user-list__item_cart {
+    flex-grow: 1;
   }
 }

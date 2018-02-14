@@ -1,9 +1,7 @@
 .main-header {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 30px;
   width: 320px;
-  outline: 3px solid blue;
   background: #ffffff;
 }
 
@@ -11,8 +9,6 @@
   position: relative;
   display: block;
   min-height: 80px;
-  width: 100%;
-  border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 }
 
@@ -22,6 +18,14 @@
   left: 50%;
   margin-top: -17px;
   margin-left: -43px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__menu-toggle {
@@ -48,8 +52,16 @@
   }
 
   .main-header__logo {
-    width: 320px;
+    width: 368px;
     height: 90px;
+    margin-left: -50px;
+  }
+
+  .main-header__logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    padding-left: 45px;
   }
 }
 
@@ -60,9 +72,12 @@
   }
 
   .main-header__logo {
-    width: 320px;
+    margin: 0;
+    padding-right: 148px;
+    width: 150px;
     height: 90px;
     border: none;
+    border-bottom: 1px solid #ececec;
 
     order: 2;
   }

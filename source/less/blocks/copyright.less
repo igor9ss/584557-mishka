@@ -1,11 +1,43 @@
 .copyright {
-  min-height: 50px;
+  position: relative;
+  padding: 25px 40px;
   background: #f1f1f1;
-  text-align: center;
+}
+
+.copyright__link {
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }
 
 .copyright__text {
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+  color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    padding: 25px 0;
+    background: #f1f1f1;
+    width: 183px;
+  }
+
+  .copyright__link {
+    position: absolute;
+    width: 28px;
+    height: 36px;
+    top: 14px;
+    right: 0;
+    background: red;
+  }
+
+  .copyright__img {
+    width: 100%;
+  }
 }

@@ -3,19 +3,18 @@
   margin: 0 auto;
   padding: 0 30px;
   width: 320px;
-  outline: 3px solid red;
-  background: #ffffff;
 }
 
 .main-content__title {
-  margin: 0;
-  padding: 0 30px;
+  margin: 0 -30px;
   min-height: 175px;
-  outline: 3px solid orange;
   background-color: #f1f1f1;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -25,9 +24,24 @@
   }
 
   .main-content__title {
-    margin-top: -90px;
-    padding-top: 110px;
-    min-height: 115px;
+    position: relative;
+    align-items: flex-start;
+    margin: -90px -50px 0;
+    padding-top: 93px;
+    min-height: 141px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 768px;
+      height: 24px;
+      bottom: -1px;
+      left: 0;
+      background: url("../../img/zigzag-fill-desktop-main-title.png");
+    }
   }
 }
 
@@ -35,5 +49,24 @@
   .main-content {
     padding: 0 50px;
     width: 1150px;
+  }
+
+  .main-content__title {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 38px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 1150px;
+      height: 34px;
+      background: url("../../img/zigzag-fill-desktop-maintitle.png");
+    }
   }
 }

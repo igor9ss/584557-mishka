@@ -1,31 +1,7 @@
 .store-descr {
-  background: #ffffff;
   text-align: left;
-  outline: 3px solid blue;
-
-  &__item_bg_flower {
-    background: url("../../img/icon-feature-flower.svg") no-repeat top left;
-  }
-
-  &__item_bg_money {
-    background: url("../../img/icon-feature-money.svg") no-repeat top left;
-  }
-
-  &__item_bg_heart {
-    background: url("../../img/icon-feature-heart.svg") no-repeat top left;
-  }
-
-  &__item_bg_ball {
-    background: url("../../img/icon-feature-ball.svg") no-repeat top left;
-  }
-
-  &__item_bg_rocket {
-    background: url("../../img/icon-feature-rocket.svg") no-repeat top left;
-  }
-
-  &__item_bg_gift {
-    background: url("../../img/icon-feature-gift.svg") no-repeat top left;
-  }
+  padding-top: 22px;
+  padding-bottom: 25px;
 }
 
 .store-descr__title {
@@ -33,7 +9,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
-  color: black;
+  margin-bottom: 30px;
 }
 
 .store-descr__list {
@@ -46,20 +22,117 @@
   list-style: none;
 }
 
+.store-descr__item {
+  padding-top: 55px;
+  margin-bottom: 30px;
+
+  &_bg_flower {
+    background: url("../../img/icon-feature-flower.svg") no-repeat 8px 1px;
+  }
+
+  &_bg_money {
+    background: url("../../img/icon-feature-money.svg") no-repeat 0 0;
+  }
+
+  &_bg_heart {
+    padding-top: 52px;
+    background: url("../../img/icon-feature-heart.svg") no-repeat 7px 3px;
+  }
+
+  &_bg_ball {
+    padding-top: 53px;
+    background: url("../../img/icon-feature-ball.svg") no-repeat 3px 1px;
+  }
+
+  &_bg_rocket {
+    padding-top: 53px;
+    background: url("../../img/icon-feature-rocket.svg") no-repeat 0 3px;
+  }
+
+  &_bg_gift {
+    padding-top: 53px;
+    background: url("../../img/icon-feature-gift.svg") no-repeat no-repeat 3px 0;
+  }
+}
+
 @media (min-width: 768px) {
+  .store-descr {
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+
+  .store-descr__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
   .store-descr__list {
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .store-descr__item {
-    width: 334px;
-    min-height: 157px;
+    width: 284px;
+    min-height: 107px;
+    padding-right: 50px;
+    margin-bottom: -7px;
+
+    &_bg_flower {
+      order: 1;
+    }
+
+    &_bg_money {
+      order: 3;
+    }
+
+    &_bg_heart {
+      order: 5;
+      min-height: 99px;
+    }
+
+    &_bg_ball {
+      order: 2;
+    }
+
+    &_bg_rocket {
+      order: 4;
+    }
+
+    &_bg_gift {
+      order: 6;
+      min-height: 99px;
+    }
   }
 }
 
 @media (min-width: 1250px) {
   .store-descr {
     padding-left: 175px;
+    padding-top: 60px;
+  }
+
+  .store-descr__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 50px;
+  }
+
+  .store-descr__item {
+    width: 34.3%;
+    min-height: 102px;
+    margin-bottom: -4px;
+    padding-top: 55px;
+    padding-right: 50px;
+
+    &_bg_heart {
+      min-height: 102px;
+    }
+
+    &_bg_gift {
+      min-height: 102px;
+    }
   }
 }
