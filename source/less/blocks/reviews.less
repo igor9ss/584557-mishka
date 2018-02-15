@@ -8,7 +8,7 @@
   display: inline-block;
   width: 320px;
   height: 6px;
-  background: url("../../img/zigzag-line-desktop.png") center bottom;
+  background: url("../../img/bg-zigzag-line.svg") center bottom/contain;
   margin-left: -30px;
   margin-top: 45px;
 }
@@ -95,6 +95,10 @@
     position: relative;
     padding-top: 77px;
     background: url("../../img/review@1x.jpg") left top no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../../img/review@2x.jpg") left top/350px 457px no-repeat;
+    }
   }
 
   .reviews::after {
@@ -102,7 +106,7 @@
     display: inline-block;
     width: 768px;
     height: 17px;
-    background: url("../../img/zigzag-line-desktop2.png") center bottom no-repeat;
+    background: url("../../img/bg-zigzag-line.svg") center bottom/contain no-repeat;
     margin-left: 0;
     margin-top: 80px;
   }
@@ -199,7 +203,7 @@
     display: inline-block;
     width: 1050px;
     height: 23px;
-    background: url("../../img/zigzag-line-desktop3.png") center bottom;
+    background: url("../../img/bg-zigzag-line.svg") center bottom;
     margin-left: -175px;
     margin-top: 132px;
   }

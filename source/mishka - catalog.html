@@ -11,7 +11,11 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+              </picture>
             <button class="main-header__menu-toggle" type="button">Открыть меню</button>
           </a>
           <ul class="main-navigation__list site-list">
@@ -44,7 +48,11 @@
         <div class="products">
           <article class="products__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="product__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </picture>
             </a>
             <div class="product__wrap">
               <a class="product__link" href="#">
@@ -57,7 +65,11 @@
           </article>
           <article class="products__item product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
+              </picture>
             </a>
             <div class="product__wrap">
               <a class="product__link" href="#">
@@ -70,7 +82,11 @@
           </article>
           <article class="products__item products__item_mh_396 product">
             <a class="product__link-img" href="#">
-              <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек" width="260" height="195">
+              </picture>
             </a>
             <div class="product__wrap">
               <a class="product__link" href="">
@@ -82,13 +98,13 @@
             </div>
           </article>
           <article class="product-video">
-            <h3 class="product-video__name">Процесс производства</h3>
             <video class="product-video__box" width="260" height="150">
               <source src="#.mp4" type="video/mp4">
               <source src="#.ogv" type="video/ogg">
               <source src="#.webm" type="video/webm">
             </video>
             <div class="product-video__descr-wrap">
+              <h3 class="product-video__name">Процесс производства</h3>
               <small class="product-video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </small>
               <a class="btn product-video__btn" href="mishka%20-%20form.html">Сделать заказ</a>
@@ -98,7 +114,7 @@
       </main>
       <footer class="main-footer">
             <a class="main-footer__logo-link" href="#">
-              <img class="main-footer__logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
+              <img class="main-footer__logo" src="img/logo-footer.svg" alt="Магазин 'Мишка'" width="102" height="34">
             </a>
             <ul class="main-footer__social social">
               <li class="social__item social_instagram">
