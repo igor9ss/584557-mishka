@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mishka-form</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="picturefill.js"></script>
   </head>
   <body>
 
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+              </picture>
             <button class="main-header__menu-toggle" type="button">Открыть меню</button>
           </a>
           <ul class="main-navigation__list site-list">
@@ -107,7 +112,7 @@
       </main>
       <footer class="main-footer">
           <a class="main-footer__logo-link" href="#">
-            <img class="main-footer__logo" src="http://placehold.it/102x34" alt="Магазин 'Мишка'" width="102" height="34">
+            <img class="main-footer__logo" src="img/logo-footer.svg" alt="Магазин 'Мишка'" width="102" height="34">
           </a>
           <ul class="main-footer__social social">
             <li class="social__item social_instagram">

@@ -37,7 +37,7 @@
   height: 20px;
   outline: none;
   border: none;
-  background: url("../../img/icon-menu-close.svg");
+  background: url("../img/icon-menu-close.svg");
   font-size: 0;
 }
 
@@ -58,16 +58,17 @@
   }
 
   .main-header__logo-img {
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    padding-left: 45px;
+    position: relative;
+    top: 39px;
+    left: 49px;
+    padding-left: 42px;
+    width: 113px;
+    height: auto;
   }
 }
 
 @media (min-width: 1250px) {
   .main-header {
-    padding: 0 50px;
     width: 1150px;
   }
 
@@ -80,5 +81,12 @@
     border-bottom: 1px solid #ececec;
 
     order: 2;
+  }
+
+  .main-header__logo-img {
+    top: 26px;
+    left: 51px;
+    padding-left: 42px;
+    width: 149px;
   }
 }
