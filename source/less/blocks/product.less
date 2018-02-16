@@ -68,10 +68,24 @@
   width: 25px;
   height: 25px;
   font-size: 0;
-  bottom: 25px;
-  right: 25px;
+  bottom: 31px;
+  right: 26px;
   border: none;
-  background: url("../img/icon-cart.svg") top right no-repeat;
+  background: transparent;
+  outline: none;
+
+  &:hover .product__cart-icon {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active .product__cart-icon {
+    opacity: 0.3;
+  }
+}
+
+.product__cart-icon {
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {

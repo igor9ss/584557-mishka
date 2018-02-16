@@ -35,6 +35,22 @@
   }
 }
 
+.product-video__play-icon {
+  position: absolute;
+  top: 132px;
+  left: 80px;
+  z-index: 1000;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
 .product-video__box {
   width: 100%;
   margin: 0;
@@ -44,12 +60,10 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  background: url("../img/icon-play.svg") 50% 50% no-repeat,
-    url("../img/video-mobile@1x.jpg") 50% 50% no-repeat;
+  background: url("../img/video-mobile@1x.jpg") 50% 50% no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../img/icon-play.svg") 50% 50% no-repeat,
-    url("../img/video-mobile@2x.jpg") 50% 50% no-repeat;
+    background: url("../img/video-mobile@2x.jpg") 50% 50% no-repeat;
   }
 }
 
@@ -83,11 +97,16 @@
     margin-top: 0;
     margin-bottom: 19px;
     min-height: 455px;
-    background: url("../img/icon-play.svg") 50% 50% no-repeat, url("../img/video-tablet@1x.jpg") 50% 50%;
+    background: url("../img/video-tablet@1x.jpg") 50% 50%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/icon-play.svg") 50% 50% no-repeat, url("../img/video-tablet@2x.jpg") 50% 50%;
+      background: url("../img/video-tablet@2x.jpg") 50% 50%;
     }
+  }
+
+  .product-video__play-icon {
+    top: 189px;
+    left: 283px;
   }
 
   .product-video__name {
@@ -135,13 +154,16 @@
     height: 455px;
     margin-right: 79px;
     margin-bottom: 0;
-    background: url("../img/icon-play.svg") 50% 50% no-repeat,
-      url("../img/video-desktop@1x.jpg") 50% 50% no-repeat;
+    background: url("../img/video-desktop@1x.jpg") 50% 50% no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/icon-play.svg") 50% 50% no-repeat,
-      url("../img/video-desktop@2x.jpg") 50% 50% no-repeat;
+      background: url("../img/video-desktop@2x.jpg") 50% 50% no-repeat;
     }
+  }
+
+  .product-video__play-icon {
+    top: 188px;
+    left: 290px;
   }
 
   .product-video__name {
