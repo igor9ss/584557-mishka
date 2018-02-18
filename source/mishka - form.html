@@ -12,49 +12,51 @@
     <script src="picturefill.js" async></script>
   </head>
   <body>
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
+              <header class="main-header">
+          <nav class="main-navigation main-navigation_open">
+            <button class="main-navigation__menu-toggle" type="button">Открыть меню</button>
+            <a href="index.html" class="main-header__logo">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-header__logo-img" src="img/logo-mobile.svg" alt="Магазин 'Мишка'" width="86" height="35">
               </picture>
-            <button class="main-header__menu-toggle" type="button">Открыть меню</button>
-          </a>
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item_catalog">
-              <a class="site-list__link" href="mishka%20-%20catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item site-list__item_booking">
-              <a class="site-list__link" href="mishka%20-%20form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item_new site-list__item_hidden">
-              <a class="site-list__link site-list__link_mt_15" href="#">Новые поступления</a>
-            </li>
-            <li class="site-list__item site-list__item_sale site-list__item_hidden">
-              <a class="site-list__link site-list__link_mt_15" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <ul class="main-navigation__list user-list">
-            <li class="user-list__item user-list__item_search">
-                <a class="user-list__link user-list__link_search" href="#">
-                <svg class="user-list__search-icon" width="17px" height="17px">
-                  <use xlink:href="img/sprite.svg#search-icon"></use>
-                </svg>
-                Поиск по сайту</a>
-              </li>
-              <li class="user-list__item user-list__item_cart">
-                <a class="user-list__link user-list__link_cart" href="#">
-                <svg class="user-list__cart-icon" width="20px" height="18px">
-                  <use xlink:href="img/sprite.svg#cart-icon"></use>
-                </svg>
-                Корзина: пока пуста</a>
-              </li>
-          </ul>
-          <span class="main-navigation__deliv">Бесплатная доставка по России</span>
-        </nav>
-      </header>
+            </a>
+
+              <ul class="main-navigation__list site-list">
+                <li class="site-list__item site-list__item_catalog">
+                  <a class="site-list__link site-list__link " href="mishka%20-%20catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item site-list__item_booking">
+                  <a class="site-list__link" href="mishka%20-%20form.html">Вязание на заказ</a>
+                </li>
+                <li class="site-list__item site-list__item_new site-list__item_hidden">
+                  <a class="site-list__link site-list__link_mt_15" href="#">Новые поступления</a>
+                </li>
+                <li class="site-list__item site-list__item_sale site-list__item_hidden">
+                  <a class="site-list__link site-list__link_mt_15" href="#">Распродажа</a>
+                </li>
+              </ul>
+              <ul class="main-navigation__list user-list">
+                <li class="user-list__item user-list__item_search">
+                  <a class="user-list__link user-list__link_search" href="#">
+                  <svg class="user-list__search-icon" width="17px" height="17px">
+                    <use xlink:href="img/sprite.svg#search-icon"></use>
+                  </svg>
+                  Поиск по сайту</a>
+                </li>
+                <li class="user-list__item user-list__item_cart">
+                  <a class="user-list__link user-list__link_cart" href="#">
+                  <svg class="user-list__cart-icon" width="20px" height="18px">
+                    <use xlink:href="img/sprite.svg#cart-icon"></use>
+                  </svg>
+                  Корзина: пока пуста</a>
+                </li>
+              </ul>
+
+            <span class="main-navigation__deliv">Бесплатная доставка по России</span>
+          </nav>
+        </header>
       <main class="main-content">
         <h2 class="main-content__title" title>Вязание на заказ</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
