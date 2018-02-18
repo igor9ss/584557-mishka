@@ -61,7 +61,6 @@
 }
 
 .form__fieldset {
-  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -184,12 +183,10 @@
   margin-bottom: 22px;
 }
 
-.form__user-phone-item:hover .form__tel-icon {
-  opacity: 1;
-  fill: #62d1ba;
-}
-
-.form__user-phone-item:focus .form__tel-icon {
+.form__user-phone-item:hover + .form__tel-icon,
+.form__user-phone-item:focus + .form__tel-icon,
+.form__user-mail-item:hover + .form__mail-icon,
+.form__user-mail-item:focus + .form__mail-icon{
   opacity: 1;
   fill: #62d1ba;
 }
@@ -199,13 +196,12 @@
   top: 32px;
   right: 9px;
   opacity: 0.2;
-  background: red;
 }
 
 .form__mail-icon {
   position: absolute;
-  top: 32px;
-  right: 9px;
+  top: 33px;
+  right: 4px;
   opacity: 0.2;
 }
 
@@ -456,6 +452,18 @@
     padding-bottom: 16px;
   }
 
+  .form__tel-icon {
+    top: 61px;
+    right: 77px;
+    opacity: 0.2;
+  }
+
+  .form__mail-icon {
+    top: -5px;
+    right: 72px;
+    opacity: 0.2;
+  }
+
   .form__optional-item {
     width: 100%;
     margin-top: 2px;
@@ -560,6 +568,18 @@
   .form__user-name-item {
     width: 78%;
     flex-grow: 1;
+  }
+
+  .form__tel-icon {
+    top: 61px;
+    right: 233px;
+    opacity: 0.2;
+  }
+
+  .form__mail-icon {
+    top: -5px;
+    right: 228px;
+    opacity: 0.2;
   }
 
   .form__note {
