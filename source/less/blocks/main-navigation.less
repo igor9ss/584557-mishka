@@ -68,7 +68,7 @@
 
 .main-navigation_close .site-list,
 .main-navigation_close .user-list {
-  display: none;
+  display: block;
 }
 
 .main-navigation__menu-toggle_off {
@@ -82,16 +82,16 @@
     flex-wrap: wrap;
   }
 
+  .main-navigation_close .site-list,
+  .main-navigation_close .user-list {
+    display: flex;
+  }
+
   .main-navigation__menu-toggle {
     display: none;
   }
 
   .main-navigation__deliv {
     display: block;
-  }
-
-  .main-navigation_close .site-list,
-  .main-navigation_close .user-list {
-    display: none;
   }
 }
