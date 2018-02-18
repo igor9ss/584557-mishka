@@ -14,8 +14,8 @@
   <body>
       <div class="main-wrapper">
         <header class="main-header">
-          <nav class="main-navigation main-navigation_open">
-            <button class="main-navigation__menu-toggle" type="button">Открыть меню</button>
+          <nav class="main-navigation main-navigation_close">
+            <button class="main-navigation__menu-toggle main-navigation__menu-toggle_off" type="button">Открыть меню</button>
             <a class="main-header__logo">
               <picture>
                 <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
@@ -207,5 +207,21 @@
         </fieldset>
       </form>
     </section>
+  <script>
+    var navMain = document.querySelector('.main-navigation');
+    var navToggle = document.querySelector('.main-navigation__menu-toggle');
+
+    navToggle.classList.remove('main-navigation__menu-toggle_off');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-navigation_close')) {
+        navMain.classList.remove('main-navigation_close');
+        navMain.classList.add('main-navigation_open');
+      } else {
+        navMain.classList.add('main-navigation_close');
+        navMain.classList.remove('main-navigation_open');
+      }
+    });
+  </script>
   </body>
 </html>
