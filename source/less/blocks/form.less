@@ -77,33 +77,11 @@
   &_tel {
     position: relative;
     margin-bottom: 22px;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 27px;
-      height: 27px;
-      right: 7px;
-      top: 30px;
-      background: url("../img/icon-phone.svg") center no-repeat;
-    }
   }
 
   &_mail {
     position: relative;
     margin-bottom: 22px;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 34px;
-      height: 27px;
-      right: 3px;
-      bottom: 21px;
-      background: url("../img/icon-mail.svg") center no-repeat;
-    }
   }
 }
 
@@ -203,6 +181,28 @@
 .form__user-name-item {
   padding-top: 17px;
   margin-bottom: 22px;
+}
+
+.form__user-phone-item:hover + .form__tel-icon,
+.form__user-phone-item:focus + .form__tel-icon,
+.form__user-mail-item:hover + .form__mail-icon,
+.form__user-mail-item:focus + .form__mail-icon {
+  opacity: 1;
+  fill: #62d1ba;
+}
+
+.form__tel-icon {
+  position: absolute;
+  top: 32px;
+  right: 9px;
+  opacity: 0.2;
+}
+
+.form__mail-icon {
+  position: absolute;
+  top: 33px;
+  right: 4px;
+  opacity: 0.2;
 }
 
 .form__optional-item {
@@ -452,6 +452,18 @@
     padding-bottom: 16px;
   }
 
+  .form__tel-icon {
+    top: 61px;
+    right: 77px;
+    opacity: 0.2;
+  }
+
+  .form__mail-icon {
+    top: -5px;
+    right: 72px;
+    opacity: 0.2;
+  }
+
   .form__optional-item {
     width: 100%;
     margin-top: 2px;
@@ -556,6 +568,18 @@
   .form__user-name-item {
     width: 78%;
     flex-grow: 1;
+  }
+
+  .form__tel-icon {
+    top: 61px;
+    right: 233px;
+    opacity: 0.2;
+  }
+
+  .form__mail-icon {
+    top: -5px;
+    right: 228px;
+    opacity: 0.2;
   }
 
   .form__note {

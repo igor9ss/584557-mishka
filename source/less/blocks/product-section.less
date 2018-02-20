@@ -29,33 +29,39 @@
 
 .product-section__item {
   min-height: 103px;
+  transition: 0.2s;
 
   &:hover {
     padding-bottom: 5px;
   }
 
   &_interior {
-    background: #63d1bb url("../img/icon-interior.svg") no-repeat 245px 23px;
-    transition: 0.2s;
+    background-color: #63d1bb;
 
     &:hover {
       background-color: #59d5bc;
-      background-position: 245px 18px;
+    }
+
+    &:hover .product-section__lamp-icon {
+      fill: #29a592;
     }
   }
 
   &_toy {
-    background: #56c3b2 url("../img/icon-toy.svg") no-repeat 235px 21px;
-    transition: 0.2s;
+    background-color: #56c3b2;
 
     &:hover {
       background-color: #46c1ae;
-      background-position: 235px 16px;
+    }
+
+    &:hover .product-section__toy-icon {
+      fill: #239f8e;
     }
   }
 }
 
 .product-section__link {
+  position: relative;
   padding-left: 30px;
   display: block;
   min-height: 78px;
@@ -75,12 +81,26 @@
   }
 }
 
+.product-section__lamp-icon {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  fill: #3bb09d;
+}
+
+.product-section__toy-icon {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+  fill: #35a999;
+}
+
 @media (min-width: 768px) {
   .product-section__header {
     position: relative;
-    margin: -90px -50px 0;
+    margin: -91px -50px 0;
     min-height: 745px;
-    background: #ececec url("../img/hero-tablet@1x.jpg") center no-repeat;
+    background: #ececec url("../img/hero-tablet@1x.jpg") center top no-repeat;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: #ececec url("../img/hero-tablet@2x.jpg") center -3px/cover no-repeat;
@@ -111,6 +131,16 @@
     display: flex;
   }
 
+  .product-section__item {
+    width: 50%;
+    min-height: 132px;
+
+    &:hover {
+      padding-bottom: 0;
+      transform: translateY(-5px);
+    }
+  }
+
   .product-section__link {
     font-size: 20px;
     line-height: 30px;
@@ -119,28 +149,14 @@
     min-height: 88px;
   }
 
-  .product-section__item {
-    width: 50%;
+  .product-section__lamp-icon {
+    top: 30px;
+    right: 37px;
+  }
 
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    &_interior {
-      background: #63d1bb url("../img/icon-interior.svg") no-repeat 257px 30px;
-
-      &:hover {
-        background-position: 257px 25px;
-      }
-    }
-
-    &_toy {
-      background: #56c3b2 url("../img/icon-toy.svg") no-repeat 240px 31px;
-
-      &:hover {
-        background-position: 240px 26px;
-      }
-    }
+  .product-section__toy-icon {
+    top: 31px;
+    right: 33px;
   }
 }
 
@@ -171,22 +187,6 @@
 
     &:hover {
       padding-bottom: 0;
-    }
-
-    &_interior {
-      background: #63d1bb url("../img/icon-interior.svg") no-repeat 450px 30px;
-
-      &:hover {
-        background-position: 450px 25px;
-      }
-    }
-
-    &_toy {
-      background: #56c3b2 url("../img/icon-toy.svg") no-repeat 430px 30px;
-
-      &:hover {
-        background-position: 430px 25px;
-      }
     }
   }
 
